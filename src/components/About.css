@@ -1,0 +1,79 @@
+.about-container1 {
+  padding-top: 150px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-container {
+  padding-top: 15px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px; /* Adjust the border radius as desired */
+}
+
+
+
+
+  
+  .section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0;
+    borderRadius: 10px
+  }
+  .tagline{
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+  }
+  .vision{
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    padding: 20px 0;
+  }
+  
+  .title {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+    color: black;
+  }
+  .vision-item {
+    font-size: 10px; /* Adjust the font size to your preference */
+    width: 80%; /* Adjust the width to cover 3/4th of the page horizontally */
+    background-color: white; /* Set the background color to purple */
+    padding: 10px; /* Add some padding around the content */
+    /* Add any other desired styling */
+  }
+  
+  .mission-item {
+    font-size: 10px; /* Adjust the font size to your preference */
+    width: 80%; /* Adjust the width to cover 3/4th of the page horizontally */
+    background-color: white; /* Set the background color to purple */
+    padding: 10px; /* Add some padding around the content */
+    /* Add any other desired styling */
+  }
+  
+   
+  .vision-item h3,
+  .vision-item h4 {
+    color: #1a0537;
+    font-size: 17px; /* Adjust the font size as desired */
+  }
+  .mission-item h3,
+  .mission-item h4 {
+    color: #1a0537;
+    font-size: 17px; /* Adjust the font size as desired */
+  }
+  
+  .values {
+    /* CSS styles for the Values section */
+    flex: 3;
+    background-color: white;
+    color: white;
+    padding: 20px;
+  }
