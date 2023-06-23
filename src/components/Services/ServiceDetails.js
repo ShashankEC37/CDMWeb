@@ -3,11 +3,13 @@ import './ServiceDetails.css';
 import { services } from './ServiceList';
 import { Close } from '@mui/icons-material';
 
+
 const ServiceCard = ({ title, image, handleCardClick }) => {
   return (
     <div className="service-card" onClick={handleCardClick}>
       <img src={image} alt={title} className="service-card__image" />
       <h2 className="service-card__title">{title}</h2>
+      <p>Click To know More</p>
     </div>
   );
 };
