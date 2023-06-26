@@ -25,9 +25,7 @@ const ServiceDetails = () => {
     setSelectedService(null);
   };
 
-  const popupStyle = selectedService && selectedService.background
-  ? { backgroundImage: `url(${selectedService.background})` }
-  : { backgroundColor: 'white' };
+  const popupStyle =  { backgroundColor: 'white' };
 
 return (
   <div className="container2">
@@ -36,9 +34,9 @@ return (
     {selectedService && (
       <div className="overlay">
         <div className="popup" style={popupStyle}>
-          <h3 className="popup__details" style={{ textAlign: 'left' }}>
+          <h2 className="popup__details" style={{ textAlign: 'left' }}>
             {selectedService.details}
-          </h3>
+          </h2>
           <button className="close-button" onClick={handleCloseClick}>
             <Close />
           </button>

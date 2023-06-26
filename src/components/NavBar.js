@@ -157,9 +157,9 @@ export const NavBar = () => {
             </button>
             <div className="social-icon" style={socialIconStyle}>
               <div className="social-links">
-              <a href="#"><img src={navIcon1} alt="" /></a>
-              <a href="#"><img src={navIcon2} alt="" /></a>
-              <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="https://www.linkedin.com/company/creativedigitalmedia/"><img src={navIcon1} alt="" /></a>
+              <a href="https://www.facebook.com/ParamCDM"><img src={navIcon2} alt="" /></a>
+              <a href="https://www.instagram.com/creativedigitalmedia2022/"><img src={navIcon3} alt="" /></a>
               </div>
             </div>
           </span>

@@ -4,7 +4,7 @@ import { NavBar } from './components/NavBar';
 import Home from './components/Home/Home';
 import Services from './components/Services/ServiceDetails';
 import About from './components/About'
-import { Footer } from './components/Footer';
+import { Footer } from './components/Footer'; 
 
 const App = () => {
   return (

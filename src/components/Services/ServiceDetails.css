@@ -89,7 +89,7 @@
 }
 
 .popup {
-
+  background-image: white;
   width: 1000px;
   height: 500px ;
   border-radius: 10px;
@@ -105,7 +105,7 @@
 }
 
 .popup__details {
-  font-size: 14px;
+  font-size: 1px;
   color: black;
   margin-bottom: 20px;
 }

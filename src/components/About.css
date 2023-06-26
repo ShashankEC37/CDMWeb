@@ -1,8 +1,9 @@
 .about-container1 {
-  padding-top: 150px;
+  padding-top: 140px;
   text-align: left;
   display: flex;
   flex-wrap: wrap;
+  
 }
 .about-container {
   padding-top: 15px;
@@ -10,6 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px; /* Adjust the border radius as desired */
+  width : 60%
 }
 .about-container2{
   padding-top: 15px;
@@ -17,6 +19,19 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px; /* Adjust the border radius as desired */
+}
+@media screen and (max-width: 767px) {
+  .about-container {
+    width: 100%;
+  }
+
+  .mission-item {
+    font-size: 10px; /* Adjust the font size to your preference */
+    width: 100%; /* Adjust the width to cover 3/4th of the page horizontally */
+    background-color: white; /* Set the background color to purple */
+    padding: 10px; /* Add some padding around the content */
+     
+  }
 }
 
 
@@ -35,11 +50,11 @@
     font-style: italic;
   }
   .vision{
-    padding: 20px 0;
+  
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-style: italic;
-    padding: 20px 0;
+  
   }
   
   .title {
@@ -58,10 +73,10 @@
   
   .mission-item {
     font-size: 10px; /* Adjust the font size to your preference */
-    width: 80%; /* Adjust the width to cover 3/4th of the page horizontally */
+    width: 100%; /* Adjust the width to cover 3/4th of the page horizontally */
     background-color: white; /* Set the background color to purple */
     padding: 10px; /* Add some padding around the content */
-    /* Add any other desired styling */
+    text-align: 'justify' 
   }
   .about-item {
     font-size: 10px; /* Adjust the font size to your preference */
