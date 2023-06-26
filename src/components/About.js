@@ -92,8 +92,8 @@ const About = () => {
       </Container>
       <Container className="about-container">
         <div className="section1" style={{ backgroundColor: 'white', padding: '20px', color: 'white', borderRadius: '10px' }}>
-          <h1 className="title">Mission</h1>
-          <img src={mission} alt="Mission" style={{ float: 'right', width: '200px' }} />
+          <h1 className="title">About</h1>
+        
           <div className="mission-item" >
                 <h4>Established in August 2022, Creative Digital Media is a leading full-service digital marketing company. We excel in providing comprehensive back-end tech support to empower organizations in their digital marketing endeavors. Our unwavering mission is to deliver unparalleled services, enabling our clients to achieve exceptional results in the ever-evolving digital landscape. With a fusion of creativity and cutting-edge technology, we offer a diverse range of solutions, including social media management, website design and development, video production, and much more. Guided by our core values of integrity, accountability, timely delivery, and honesty, we strive to build enduring partnerships based on trust and transparency. Our visionary approach aims to become a global leader, alleviating organizational stress through seamless and innovative digital solutions, while continuously evolving to meet our clients' dynamic needs.</h4>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>

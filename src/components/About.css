@@ -1,6 +1,6 @@
 .about-container1 {
   padding-top: 140px;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   
@@ -30,7 +30,6 @@
     width: 100%; /* Adjust the width to cover 3/4th of the page horizontally */
     background-color: white; /* Set the background color to purple */
     padding: 10px; /* Add some padding around the content */
-     
   }
 }
 
@@ -44,7 +43,7 @@
  
   }
   .tagline{
-    padding: 20px 0;
+    padding: 20px 30px;
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-style: italic;
@@ -73,7 +72,7 @@
   
   .mission-item {
     font-size: 10px; /* Adjust the font size to your preference */
-    width: 100%; /* Adjust the width to cover 3/4th of the page horizontally */
+    width: 80%; /* Adjust the width to cover 3/4th of the page horizontally */
     background-color: white; /* Set the background color to purple */
     padding: 10px; /* Add some padding around the content */
     text-align: 'justify' 
@@ -100,7 +99,8 @@
   .mission-item h3,
   .mission-item h4 {
     color: #1a0537;
-    font-size: 17px; /* Adjust the font size as desired */
+    font-size: 19px; /* Adjust the font size as desired */
+    text-align: justify;
   }
   
   .values {

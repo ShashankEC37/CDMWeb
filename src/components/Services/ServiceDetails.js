@@ -53,7 +53,7 @@ return (
             title={service.title}
             image={service.image}
             details={service.details}
-            background={service.background}
+         
             handleCardClick={() => handleCardClick(service)}
           />
         ))}
