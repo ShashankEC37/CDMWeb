@@ -672,3 +672,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
+
+/* Add custom CSS rules to display fields on separate lines */
+.full-width {
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+

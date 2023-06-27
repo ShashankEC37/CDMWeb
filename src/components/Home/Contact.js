@@ -77,112 +77,117 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
-      <Container>
-        <Row className="align-items-center">
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <img className={isVisible ? 'animate__animated animate__zoomIn' : ''} src={contactImg} alt="Contact Us" />
+     <Container>
+  <Row className="align-items-center">
+    <Col size={12} md={6}>
+      <TrackVisibility>
+        {({ isVisible }) => (
+          <img className={isVisible ? 'animate__animated animate__zoomIn' : ''} src={contactImg} alt="Contact Us" />
+        )}
+      </TrackVisibility>
+    </Col>
+    <Col size={12} md={6}>
+      <TrackVisibility>
+        {({ isVisible }) => (
+          <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
+            <h2>Get In Touch</h2>
+            <form onSubmit={handleSubmit}>
+              <Row>
+                <Col size={12} className="px-1">
+                  <label htmlFor="name">
+                    Name <span className="mandatory">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value={name}
+                    placeholder="Name"
+                    onChange={handleChange}
+                    required
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col size={12} className="px-1">
+                  <label htmlFor="email">
+                    Email Address <span className="mandatory">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value={email}
+                    placeholder="Email Address"
+                    onChange={handleChange}
+                    required
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col size={12} className="px-1">
+                  <label htmlFor="phone">
+                    Phone Number <span className="mandatory">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    value={phone}
+                    placeholder="Phone Number"
+                    onChange={handleChange}
+                    required
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col size={12} className="px-1">
+                  <label htmlFor="message">
+                    Message <span className="mandatory">*</span>
+                  </label>
+                  <div className="full-width">
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="6"
+                      value={message}
+                      placeholder="Message"
+                      onChange={handleChange}
+                      required
+                    ></textarea>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col size={12} className="px-1 d-flex justify-content-center align-items-center">
+                  <button type="submit">
+                    <span>{buttonText}</span>
+                  </button>
+                </Col>
+              </Row>
+              {status.message && (
+                <Row>
+                  <Col size={12} className="px-1">
+                    <p
+                      className={status.success === false ? 'danger' : 'success'}
+                      style={{
+                        backgroundColor: 'white',
+                        color: status.success === false ? 'red' : 'green'
+                      }}
+                    >
+                      {status.message}
+                    </p>
+                  </Col>
+                </Row>
               )}
-            </TrackVisibility>
-          </Col>
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
-                  <h2>Get In Touch</h2>
-                  <form onSubmit={handleSubmit}>
-                    <Row>
-                      <Col size={12} sm={6} className="px-1">
-                        <label htmlFor="name">
-                          Name <span className="mandatory">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          name="name"
-                          id="name"
-                          value={name}
-                          placeholder="Name"
-                          onChange={handleChange}
-                          required
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <label htmlFor="email">
-                          Email Address <span className="mandatory">*</span>
-                        </label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          value={email}
-                          placeholder="Email Address"
-                          onChange={handleChange}
-                          required
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <label htmlFor="phone">
-                          Phone Number <span className="mandatory">*</span>
-                        </label>
-                        <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          value={phone}
-                          placeholder="Phone Number"
-                          onChange={handleChange}
-                          required
-                        />
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col size={12} className="px-1">
-                        <label htmlFor="message">
-                          Message <span className="mandatory">*</span>
-                        </label>
-                        <div className="full-width">
-                          <textarea
-                            name="message"
-                            id="message"
-                            rows="6"
-                            value={message}
-                            placeholder="Message"
-                            onChange={handleChange}
-                            required
-                          ></textarea>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col size={12} className="px-1 d-flex justify-content-center align-items-center">
-                        <button type="submit">
-                          <span>{buttonText}</span>
-                        </button>
-                      </Col>
-                    </Row>
-                    {status.message && (
-                      <Row>
-                        <Col size={12} className="px-1">
-                          <p
-                            className={status.success === false ? 'danger' : 'success'}
-                            style={{
-                              backgroundColor: 'white',
-                              color: status.success === false ? 'red' : 'green'
-                            }}
-                          >
-                            {status.message}
-                          </p>
-                        </Col>
-                      </Row>
-                    )}
-                  </form>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
+            </form>
+          </div>
+        )}
+      </TrackVisibility>
+    </Col>
+  </Row>
+</Container>
+
     </section>
   );
 };

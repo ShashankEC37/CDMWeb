@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../../assets/img/header-img.svg";
 import Whatsapp from "../../assets/img/Whatsapp.png";
-import 'animate.css';
+import './Banner.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -65,12 +65,13 @@ export const Banner = () => {
                   {({ isVisible }) => (
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                       <br></br>
-                      <span className="tagline">Welcome to Creative Design Media</span>
                       <h1>{`Launch Your Brand into Digital Orbit `}</h1>
-                     
-                      <button className="tagline" onClick={handleClick}>
-                        Let’s Connect  <img src={Whatsapp} alt="Whatsapp" style={{ width: '50px', height: '50px', animation: 'none' }} />
-                      </button>
+                      <button className="tagline1" onClick={handleClick} style={{ marginLeft: '230px' }}>
+  <img src={Whatsapp} alt="Whatsapp" style={{ width: '50px', height: '50px', animation: 'none' }} /> Let’s Connect
+</button>
+
+          
+
                       
 
                     </div>

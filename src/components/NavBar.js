@@ -6,13 +6,14 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { PhoneNumberDisplay } from './Home/Call';
 import { MailIcon } from "./Home/Mail";
-import Location  from "./Home/Location"
+import Location from "./Home/Location";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "./navbar.css"
+import "./navbar.css";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -21,7 +22,7 @@ export const NavBar = () => {
       } else {
         setScrolled(false);
       }
-    }
+    };
 
     window.addEventListener("scroll", onScroll);
 
@@ -51,6 +52,7 @@ export const NavBar = () => {
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
+    setIsMenuOpen(false); // Close the menu when a link is clicked
   };
 
   const navbarStyle = {};
@@ -77,16 +79,19 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="md" style={scrolled ? { ...navbarStyle, ...{   background: "black" } } : navbarStyle}>
+    <Navbar expand="md" style={scrolled ? { ...navbarStyle, ...{ background: "black" } } : navbarStyle}>
       <Container>
         <Navbar.Brand href="/">
           <img src={Logo} alt="Logo" style={logoStyle} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className={isMenuOpen ? "show" : ""}>
+          <Nav className={isMenuOpen ? "flex-column align-items-center" : "ms-auto"}>
             <Nav.Link
               href="/"
               className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
@@ -115,51 +120,48 @@ export const NavBar = () => {
             >
               Portfolio
             </Nav.Link>
-           
           </Nav>
           <span className="navbar-text">
-            <button
-              className="vvd"
-              style={{
-                width: '100%',
-              }}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => (window.location.href = '/#connect')}
-            >
-              <span>Let's Connect</span>
-              {isHovered && (
-                <span
-                  style={{
-                    position: 'absolute',
-                    top: '100%',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '10px',
-                    backgroundColor: '#fff',
-                    padding: '10px',
-                    borderRadius: '5px',
-                    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
-                  }}
-                >
-                  <div style={{ textAlign: 'center' }}>
-                  <div className="connect-links">
-                    <PhoneNumberDisplay />
-                    <MailIcon />
-                    <Location />
-                    </div>
-                  </div>
-                </span>
-              )}
-            </button>
+          <button
+  className={`vvd ${isMenuOpen ? 'mobile-button' : ''}`}
+  onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}
+  onClick={() => (window.location.href = '/#connect')}
+>
+  <span>Let's Connect</span>
+  {isHovered && (
+    <span
+      style={{
+        position: 'absolute',
+        top: '100%',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '10px',
+        backgroundColor: '#fff',
+        padding: '10px',
+        borderRadius: '5px',
+        boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
+      }}
+    >
+      <div style={{ textAlign: 'center' }}>
+        <div className="connect-links">
+          <PhoneNumberDisplay />
+          <MailIcon />
+          <Location />
+        </div>
+      </div>
+    </span>
+  )}
+</button>
+
             <div className="social-icon" style={socialIconStyle}>
               <div className="social-links">
-              <a href="https://www.linkedin.com/company/creativedigitalmedia/"><img src={navIcon1} alt="" /></a>
-              <a href="https://www.facebook.com/ParamCDM"><img src={navIcon2} alt="" /></a>
-              <a href="https://www.instagram.com/creativedigitalmedia2022/"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/company/creativedigitalmedia/"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.facebook.com/ParamCDM"><img src={navIcon2} alt="" /></a>
+                <a href="https://www.instagram.com/creativedigitalmedia2022/"><img src={navIcon3} alt="" /></a>
               </div>
             </div>
           </span>

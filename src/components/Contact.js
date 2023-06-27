@@ -108,7 +108,9 @@ export const Contact = () => {
                           required
                         />
                       </Col>
+            
                       <Col size={12} sm={6} className="px-1">
+      
                         <label htmlFor="email">
                           Email Address <span className="mandatory">*</span>
                         </label>
@@ -121,7 +123,9 @@ export const Contact = () => {
                           onChange={handleChange}
                           required
                         />
+                       
                       </Col>
+                  
                       <Col size={12} sm={6} className="px-1">
                         <label htmlFor="phone">
                           Phone Number <span className="mandatory">*</span>
