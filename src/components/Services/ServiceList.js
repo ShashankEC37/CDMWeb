@@ -7,7 +7,11 @@ import Modeling from "../../assets/img/3D modeling.png";
 import socialmediabackground from "../../assets/img/socilmeidia background.PNG"
 import videobackground from "../../assets/img/videography background.PNG";
 import Responsive from "../../assets/img/Responsive.gif"
+import Blogs from "../../assets/img/Blogs.jpg"
+import DigitalMarketingServices from "../../assets/img/Digital Marketing Services.jpg"
+import EmailMarketing from "../../assets/img/email marketing.jpg"
 import "./ServicesList.css"
+
 export const services = [
   {
     title: 'Web Development',
@@ -15,6 +19,8 @@ export const services = [
     details : <div><h3>Web Development</h3><p className ="service-paragraph"><strong>Website (Static & Responsive):</strong> We design and develop modern and userfriendly websites that leave a lasting impression. Whether you need a static website for showcasing your business or a responsive website that adapts to different devices, we've got you covered</p>
                     <p className ="service-paragraph"><strong>Blogs:</strong> Our talented writers craft compelling blog content that resonates with your audience. We create informative, engaging, and SEO-friendly blogs that drive traffic to your website and establish you as a thought leader in your industry</p>
                   <img src={Responsive} alt="Responsive" style={{ width: '300px' }} />
+                  <img src={Blogs} alt="Blogs" style={{ width: '300px' }} />
+
                     </div>},
   {
     title: 'Digital Marketing',
@@ -23,6 +29,9 @@ export const services = [
         <p className ="service-paragraph"><strong>Search Engine Optimization (SEO):</strong> Optimizing websites to improve their visibility and organic rankings in search engine results.</p>
         <p className ="service-paragraph"><strong>Email Marketing:</strong> Designing and implementing email campaigns to reach and nurture leads or engage existing customers.</p>
         <p className ="service-paragraph"><strong>Content Marketing:</strong>Creating and distributing valuable, relevant, and engaging content to attract and retain customers.</p>
+        <img src={DigitalMarketingServices} alt="Blogs" style={{ width: '220px' }} />
+        <img src={EmailMarketing} alt="Blogs" style={{ width: '220px' }} />
+        
         </div>},
   {
     title: 'Social Media Management',
@@ -33,6 +42,8 @@ export const services = [
     <p className ="service-paragraph">Harness the power of social media with our expert social media marketing services. We develop effective strategies to promote your brand, increase your online visibility, and engage your target audience across various social media platforms.</p>
     <p className ="service-paragraph"><strong>Facebook & Instagram</strong> - Reels, Stories, Posts, audience engagement, Brand Promotions</p>
     <p className ="service-paragraph"><strong>LinkedIn, Twitter </strong>- Connections and Followers engagement through insightful blogs, videos, and photos</p>
+    <img src={socialmediabackground} alt="Responsive" style={{ width: '400px' }} />
+ 
   </div>
   
   

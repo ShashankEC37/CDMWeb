@@ -3,12 +3,13 @@ import './ServiceDetails.css';
 import { services } from './ServiceList';
 import { Close } from '@mui/icons-material';
 
+
 const ServiceCard = ({ title, image, handleCardClick }) => {
   return (
     <div className="service-card" onClick={handleCardClick}>
       <img src={image} alt={title} className="service-card__image" />
       <h2 className="service-card__title">{title}</h2>
-      <p className='knowmore'>Click To Know More</p>
+      <p>Click To know More</p>
     </div>
   );
 };
@@ -24,24 +25,25 @@ const ServiceDetails = () => {
     setSelectedService(null);
   };
 
-  const popupStyle = { backgroundColor: 'white' };
+  const popupStyle =  { backgroundColor: 'white' };
 
-  return (
-    <div className="container2">
-      <h1>Our Services</h1>
+return (
+  <div className="container2">
+    <h1>Our Services</h1>
 
-      {selectedService && (
-        <div className="overlay">
-          <div className="popup" style={popupStyle}>
-
-            <h2 className="popup__details" style={{ textAlign: 'left', color: 'black'}}>
-              {selectedService.details}
-            </h2>
-            <button className="close-button" onClick={handleCloseClick}>
-              <Close />
-            </button>
-          </div>
+    {selectedService && (
+      <div className="overlay">
+        <div className="popup" style={popupStyle}>
+          <h2 className="popup__details" style={{ textAlign: 'left' }}>
+            {selectedService.details}
+          </h2>
+          <button className="close-button" onClick={handleCloseClick}>
+            <Close />
+          </button>
         </div>
+      </div>
+    
+
       )}
 
       <div className="service-cards">
@@ -51,6 +53,7 @@ const ServiceDetails = () => {
             title={service.title}
             image={service.image}
             details={service.details}
+         
             handleCardClick={() => handleCardClick(service)}
           />
         ))}

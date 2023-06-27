@@ -1,7 +1,4 @@
-.custom-navbar {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 
 .navbar-link {
   font-size: 18px;
@@ -32,8 +29,8 @@
 }
 
 .mobile-button {
-  width: 10%;
-  font-size: 5px;
+  width: 100%;
+  font-size: 3px;
 }
 
 
