@@ -1,37 +1,52 @@
-.about-container1 {
-  padding-top: 130px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  
-}
+
 .about-container {
   padding-top: 100px;
   text-align: left;
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px; /* Adjust the border radius as desired */
-  width : 60%
+  width : 100%
 }
 .about-container2{
   padding-top: 15px;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  width : 60%;
+  width : 70%;
   border-radius: 10px; /* Adjust the border radius as desired */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.values-image {
+  grid-row: 1; /* Place the image in row 1 */
+}
+.mission-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 767px) {
-  .about-container {
+  .about-container,.about-container2 {
     width: 100%;
   }
 
+
   .mission-item {
+   
     font-size: 10px; /* Adjust the font size to your preference */
     width: 100%; /* Adjust the width to cover 3/4th of the page horizontally */
     background-color: white; /* Set the background color to purple */
     padding: 10px; /* Add some padding around the content */
   }
+}
+/* styles.css */
+.custom-heading {
+  padding-right: 5px;
 }
 
 
@@ -43,18 +58,38 @@
     padding: 20px 0;
  
   }
-  .tagline{
-    padding: 20px 30px;
+  .tagline {
+    padding: 60px 30px 20px;
     text-align: center;
     font-family: 'Arial', sans-serif;
-   
   }
-  .vision{
+  .vision {
     font-size: 30px;
     text-align: center;
     font-family: 'Arial', sans-serif;
-    color : black
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
   
+ 
+  
+  .mission2-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-column: 2; /* Place the image in column 2 */
+  grid-row: 1; /* Place the image in row 1 */
+
+  }
+  
+  .mission2-item {
+ 
+    justify-content: flex-end;
+    margin-bottom: 10px;
   }
   
   .title {
@@ -100,8 +135,15 @@
   .mission-item h4 {
     color: #1a0537;
     font-size: 19px; /* Adjust the font size as desired */
-    text-align: justify;
+    text-align: left;
   }
+
+.mission2-item h3,
+.mission2-item h4 {
+  color: #1a0537;
+  font-size: 19px; /* Adjust the font size as desired */
+  text-align: justify;
+}
   
   .values {
     /* CSS styles for the Values section */
@@ -110,9 +152,26 @@
     color: white;
     padding: 20px;
   }
-  .paragraph-justify {
-    text-align: justify;
+  .values-container {
+    width: 100%;
   }
+  
+  .About {
+    /* Styles for large screens */
+
+    color: #1a0537;
+    font-size: 19px; /* Adjust the font size as desired */
+  }
+  
+  @media (max-width: 767px) {
+    /* Styles for mobile screens */
+    .About {
+      text-align: left;
+      color: #1a0537;
+      font-size: 19px; /* Adjust the font size as desired */
+    }
+  }
+  
   
   @keyframes slide-up {
     0% {
@@ -129,4 +188,55 @@
     animation: slide-up 1s ease-in-out;
   }
   
+@media screen and (max-width: 767px) {
+  .about-container,
+  .about-container2 {
+    width: 100%;
+  }
+
+  .tagline h1.tagline {
+    font-size: 24px;
+    padding: 40px 20px 10px;
+  }
+
+  .about-container2 h1.vision,
+  .about-container2 .vision,
+  .about-container2 h4.custom-heading {
+    font-size: 16px;
+  }
+
+  .about-container2 div.values img {
+    width: 100px;
+  }
+
+  .about-container2 div.mission2-items div.mission2-item {
+    margin-bottom: 5px;
+  }
+
+  .about-container2 div.values h1.vision {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .about-container2 div.values img {
+    width: 100px;
+  }
+
+  .about-container2 div.mission2-items div.mission2-item {
+    margin-bottom: 5px;
+  }
+
+  .about-container2 div.values-container h1.vision {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .about-container2 div.values-image img {
+    width: 100px;
+  }
+
+  .about-container2 div.mission2-items div.mission2-item {
+    margin-bottom: 5px;
+  }
+}
   

@@ -6,6 +6,7 @@ import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
+import "./projects.css"
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
@@ -53,17 +54,18 @@ export const Projects = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Portfolio</h2>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-      <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-        <Nav.Item>
-          <Nav.Link eventKey="first" className="nav-link-mobile">Marketing</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="second" className="nav-link-mobile">Web Development</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="third" className="nav-link-mobile">Social Media</Nav.Link>
-        </Nav.Item>
-      </Nav>
+                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+  <Nav.Item>
+    <Nav.Link eventKey="first" className="nav-link-mobile">Branding</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="second" className="nav-link-mobile">Web Development</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="third" className="nav-link-mobile">Social Media</Nav.Link>
+  </Nav.Item>
+</Nav>
+
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
