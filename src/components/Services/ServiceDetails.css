@@ -16,6 +16,14 @@
   }
 }
 
+@media (max-width: 600px) {
+  .popup {
+    max-width: 100%;
+    /* Add other styles specific to mobile */
+  }
+}
+
+
 .service-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

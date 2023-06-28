@@ -4,10 +4,33 @@
   font-size: 18px;
 }
 
-.logo-image {
-  width: 150px; /* Adjust the width to your desired size */
-  height: auto; /* Maintain aspect ratio */
+
+.logo {
+  width: 159px;
+  height: auto;
 }
+
+@media (max-width: 747px) {
+  .logo {
+    align-self: flex-start;
+    margin-left: -70px;
+    max-width: 150px; /* Adjust the maximum width as needed for mobile devices */
+    /* Add other styles specific to mobile */
+  }
+
+
+    .social-links {
+      flex-direction: row; /* Display social links in a row */
+      justify-content: center; /* Center the social links horizontally */
+      margin-top: 10px; /* Add some spacing between the links and the navbar */
+    }
+  
+    .social-links a {
+      margin: 0 1px; /* Add margin between the social icons */
+    }
+  
+}
+
 
 
 .social-icon-row {
@@ -33,4 +56,23 @@
   font-size: 3px;
 }
 
+.navbar {
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+}
 
+.navbar.collapsed {
+  height: 60px; /* Adjust the height as per your requirement */
+}
+
+.navbar .navbar-toggler-icon {
+  font-size: 20px; /* Adjust the font size of the hamburger icon */
+}
+
+.navbar {
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+
+.navbar .navbar-toggler-icon {
+  font-size: 20px; /* Adjust the font size of the hamburger icon */
+}

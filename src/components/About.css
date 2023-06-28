@@ -1,11 +1,18 @@
 
 .about-container {
-  padding-top: 100px;
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
+  padding-top: 15px;
+  text-align: center;
+  width : 70%;
   border-radius: 10px; /* Adjust the border radius as desired */
-  width : 100%
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .about-container {
+    padding-top: 200px; /* Adjust the top padding as desired for mobile */
+  }
 }
 .about-container2{
   padding-top: 15px;
@@ -44,6 +51,25 @@
     padding: 10px; /* Add some padding around the content */
   }
 }
+
+
+
+
+
+
+.animate-zoom-in {
+  animation: zoom-in 1s ease-in-out;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* styles.css */
 .custom-heading {
   padding-right: 5px;

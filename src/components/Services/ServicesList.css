@@ -1,4 +1,18 @@
 .service-paragraph {
     color: black;
   }
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .image {
+    width: 220px;
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      width: 150px;
+    }
+  }
   

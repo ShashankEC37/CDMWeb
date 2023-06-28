@@ -1,9 +1,9 @@
 import Logo from "../assets/img/Logo.png";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import {InstagramIcon} from "./Home/Instagram";
+import {FacebookIcon} from "./Home/Facebook"
+import {LinkedInIcon} from "./Home/Linkedin"
 import { PhoneNumberDisplay } from './Home/Call';
 import { MailIcon } from "./Home/Mail";
 import Location from "./Home/Location";
@@ -55,18 +55,10 @@ export const NavBar = () => {
     setIsMenuOpen(false); // Close the menu when a link is clicked
   };
 
-  const navbarStyle = {};
-
-  const logoStyle = {
-    width: '200px',
-    height: 'auto',
-  };
-
-  const socialIconStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-end',
-  };
+  const navbarStyle =  {
+    padding: isMenuOpen ? '0' : '', // Set padding to '0' when the menu is open (for mobile)
+    minHeight: scrolled ? '30px' : '',
+  }
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -79,17 +71,21 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="md" style={scrolled ? { ...navbarStyle, ...{ background: "black" } } : navbarStyle}>
-      <Container>
-        <Navbar.Brand href="/">
-          <img src={Logo} alt="Logo" style={logoStyle} />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+    <Navbar expand="sm" style={scrolled ? { ...navbarStyle, ...{ background: "black" } } : navbarStyle}>
+      <Container style={{ paddingTop: 0 , paddingBottom:0}}>
+  <Navbar.Brand href="/">
+    <img src={Logo} alt="Logo" className="logo" />
+  </Navbar.Brand>
+  <Navbar.Toggle
+    aria-controls="basic-navbar-nav"
+    onClick={() => {
+      setIsMenuOpen(!isMenuOpen);
+      setScrolled(true); // Set the background to black when the toggle is clicked
+    }}
+  >
+    {/* Toggle content */}
+  </Navbar.Toggle>
+
         <Navbar.Collapse id="basic-navbar-nav" className={isMenuOpen ? "show" : ""}>
           <Nav className={isMenuOpen ? "flex-column align-items-center" : "ms-auto"}>
             <Nav.Link
@@ -141,29 +137,29 @@ export const NavBar = () => {
         justifyContent: 'center',
         gap: '10px',
         backgroundColor: '#fff',
-        padding: '10px',
         borderRadius: '5px',
         boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
       }}
     >
       <div style={{ textAlign: 'center' }}>
-        <div className="connect-links">
-          <PhoneNumberDisplay />
-          <MailIcon />
-          <Location />
-        </div>
+      <div className="connect-links">
+      <div className="row1">
+        <PhoneNumberDisplay />
+        <MailIcon />
+        <Location />
+      </div>
+      <div className="row2">
+        <LinkedInIcon />
+        <FacebookIcon />
+        <InstagramIcon />
+      </div>
+    </div>
       </div>
     </span>
   )}
 </button>
 
-            <div className="social-icon" style={socialIconStyle}>
-              <div className="social-links">
-                <a href="https://www.linkedin.com/company/creativedigitalmedia/"><img src={navIcon1} alt="" /></a>
-                <a href="https://www.facebook.com/ParamCDM"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/creativedigitalmedia2022/"><img src={navIcon3} alt="" /></a>
-              </div>
-            </div>
+
           </span>
         </Navbar.Collapse>
       </Container>

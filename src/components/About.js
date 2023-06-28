@@ -16,7 +16,8 @@ const About = () => {
 
   return (
     <div style={pageStyle}>
-      <Container className="about-container">
+  
+      <Container fluid className="about-container2">
   <div className="tagline">
     <h1 className="tagline">
       <strong>Empowering Digital Success Through Innovative Solutions</strong>
@@ -24,14 +25,19 @@ const About = () => {
   </div>
 </Container>
 
-      <Container className="about-container2 animate-slide-up">
+      <Container fluid className="about-container2 animate-slide-up" >
         <div className="section1" style={{ backgroundColor: 'white', padding: '30px', color: 'white', borderRadius: '10px' }}>
         <div className="values">
     <div> <h1 className="vision" style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}><strong>About</strong></h1>
  </div>
         
-          <div className="About" >
-                <h4>Established in August 2022, Creative Digital Media is a leading full-service digital marketing company. We excel in providing comprehensive back-end tech support to empower organizations in their digital marketing endeavors. Our unwavering mission is to deliver unparalleled services, enabling our clients to achieve exceptional results in the ever-evolving digital landscape. With a fusion of creativity and cutting-edge technology, we offer a diverse range of solutions, including social media management, website design and development, video production, and much more. Guided by our core values of integrity, accountability, timely delivery, and honesty, we strive to build enduring partnerships based on trust and transparency. Our visionary approach aims to become a global leader, alleviating organizational stress through seamless and innovative digital solutions, while continuously evolving to meet our clients' dynamic needs.</h4>
+ <div className="About" style={{ textAlign: 'justify' }}>
+ <h4 style={{ textAlign: 'justify', fontSize: '20px' }}>
+  Established in August 2022, Creative Digital Media is a leading full-service digital marketing company. We excel in providing comprehensive back-end tech support to empower organizations in their digital marketing endeavors. Our unwavering mission is to deliver unparalleled services, enabling our clients to achieve exceptional results in the ever-evolving digital landscape. With a fusion of creativity and cutting-edge technology, we offer a diverse range of solutions, including social media management, website design and development, video production, and much more. Guided by our core values of integrity, accountability, timely delivery, and honesty, we strive to build enduring partnerships based on trust and transparency. Our visionary approach aims to become a global leader, alleviating organizational stress through seamless and innovative digital solutions, while continuously evolving to meet our clients' dynamic needs.
+</h4>
+
+
+
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                   <img src={partnership} alt="Partnership" style={{ width: '150px' }} />
                   <img src={success} alt="Success" style={{ width: '150px' }} />
@@ -40,10 +46,10 @@ const About = () => {
               </div>
             </div>
       </Container>
-      <Container className="about-container2 animate-slide-up">
+      <Container fluid className="about-container2 animate-slide-up">
   <div className="section1" style={{ backgroundColor: 'white', padding: '10px', color: 'black', borderRadius: '10px', display: 'flex', alignItems: 'center' }}>
     <div style={{ flex: 1 }}>
-      <img src={vision} alt="Vision" style={{ width: '60%' }} />
+      <img src={vision} alt="Vision" style={{ width: '70%' }} />
     </div>
     <div style={{ flex: 1 }}>
       <h1 className="vision" style={{ fontWeight: 'bold', fontSize: '30px' }}><strong>Vision</strong></h1>
@@ -54,7 +60,7 @@ const About = () => {
   </div>
 </Container>
 
-<Container className="about-container2">
+<Container fluid className="about-container2">
   <div className="section1" style={{ backgroundColor: 'white', padding: '10px', color: 'white', borderRadius: '10px', width: '100%', display: 'flex', alignItems: 'center' }}>
   <div className="values">
     <div> <h1 className="vision" style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}><strong>Mission</strong></h1>
@@ -65,8 +71,8 @@ const About = () => {
     alt="Values"
     style={{
       float: 'right',
-      width: '150px',
-      maxWidth: '30%', // Add this line to ensure the image doesn't exceed its container
+      width: '200px',
+      maxWidth: '50%', // Add this line to ensure the image doesn't exceed its container
     }}
   />
 </div>
@@ -93,7 +99,7 @@ const About = () => {
   </div>
 </Container>
 
-<Container className="about-container2">
+<Container fluid className="about-container2">
   <div className="section1" style={{ backgroundColor: 'white', padding: '10px', color: 'white', borderRadius: '10px', width: '100%', display: 'flex', alignItems: 'center' }}>
   <div className="values">
     <div> <h1 className="vision" style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}><strong>Values</strong></h1>
@@ -104,8 +110,8 @@ const About = () => {
     alt="Values"
     style={{
       float: 'left',
-      width: '150px',
-      maxWidth: '20%', // Add this line to ensure the image doesn't exceed its container
+      width: '200px',
+      maxWidth: '40%', // Add this line to ensure the image doesn't exceed its container
     }}
   />
 </div>
@@ -121,10 +127,10 @@ const About = () => {
         <h3><strong>Timely Delivery</strong></h3>
       </div>
       <div className="mission2-item">
-        <h3><strong>Honesty</strong></h3>
+        <h3><strong>Perfection </strong></h3>
       </div>
       <div className="mission2-item">
-        <h3><strong>Continuous Improvement</strong></h3>
+        <h3><strong>Honesty</strong></h3>
       </div>
       </div>
     </div>

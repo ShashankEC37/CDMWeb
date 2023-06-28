@@ -38,11 +38,11 @@ export const MyCarousel = () => {
   };
   return (
     <section className="services" id="service">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="skill-bx wow zoomIn">
-              <h2>Services</h2>
+  <div className="container">
+    <div className="row">
+      <div className="col-12">
+        <div className="skill-bx wow zoomIn" style={{ width: '100%' }}>
+          <h2>Services</h2>
               <p>One Stop Solution for all your digital needs</p>
               <br />
     
@@ -72,29 +72,28 @@ export const MyCarousel = () => {
         <h5>3-D Modeling</h5>
       </div>
     </Carousel>
-    <br></br>
-    <button
-                style={{
-                  backgroundColor: 'purple',
-                  color: 'white',
-                  padding: '10px 20px',
-                  border: 'none',
-                  borderRadius: '4px',
-                  fontSize: '16px',
-                  fontWeight: 'bold',
-                  cursor: 'pointer',
-                }}
-                onClick={() => (window.location.href = '/services')}
-              >
-                Know More
-              </button>
-                
-            </div>
-          </div>
+    <br />
+          <button
+            style={{
+              backgroundColor: 'purple',
+              color: 'white',
+              padding: '10px 20px',
+              border: 'none',
+              borderRadius: '4px',
+              fontSize: '16px',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+            }}
+            onClick={() => (window.location.href = '/services')}
+          >
+            Know More
+          </button>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
-    </section>
+    </div>
+  </div>
+  <img className="background-image-left" src={colorSharp} alt="Image" />
+</section>
   );
 };
 

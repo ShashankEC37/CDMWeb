@@ -1,0 +1,25 @@
+.social-links-container {
+    position: fixed;
+    top: 20px; /* Adjust the vertical position as needed */
+    right: 20px; /* Adjust the horizontal position as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between the social icons */
+  }
+  
+  .social-links a {
+    display: block;
+  }
+  
+  .social-links img {
+    width: 30px; /* Adjust the width of the social icons as needed */
+    height: auto;
+  }
+  

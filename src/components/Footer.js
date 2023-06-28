@@ -15,7 +15,7 @@ export const Footer = () => {
   };
   return (
     <footer>
-    <Container>
+    <Container fluid>
       <Row className="align-items-center">
       <Col sm={12} md={4} lg={4} className="mb-3 mb-md-0">
   <img src={logo} alt="Logo" style={{ width: '130px' }} />

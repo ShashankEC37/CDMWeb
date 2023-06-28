@@ -4,7 +4,8 @@ import headerImg from "../../assets/img/header-img.svg";
 import Whatsapp from "../../assets/img/Whatsapp.png";
 import './Banner.css';
 import TrackVisibility from 'react-on-screen';
-
+import { textAlign } from "@mui/system";
+const isMobile = window.innerWidth <= 767;
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -58,17 +59,33 @@ export const Banner = () => {
 
     
           <section className="banner" id="home">
-          <Container>
+          <Container >
             <Row className="aligh-items-center">
               <Col xs={12} md={6} xl={7}>
                 <TrackVisibility>
                   {({ isVisible }) => (
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                       <br></br>
-                      <h1>{`Launch Your Brand into Digital Orbit `}</h1>
-                      <button className="tagline1" onClick={handleClick} style={{ marginLeft: '230px' }}>
-  <img src={Whatsapp} alt="Whatsapp" style={{ width: '50px', height: '50px', animation: 'none' }} /> Let’s Connect
+                      <h1 className="brand-title" style={{display: "block", lineHeight:"1", letterSpacing:"0.8 px", fontWeight:"700", fontFamily: "sans-serif", fontSize: isMobile ? '30px' : '65px' }}>
+    Launch Your Brand into Digital Orbit
+  
+  </h1>
+                      <button 
+  className="tagline1"
+  onClick={handleClick}
+  style={{
+    marginLeft: window.innerWidth > 767 ? '280px' : '40px',
+    textAlign: 'left',
+  }}
+>
+  <img
+    src={Whatsapp}
+    alt="Whatsapp"
+    style={{ width: '50px', height: '50px', animation: 'none' }}
+  />{' '}
+  Let’s Connect
 </button>
+
 
           
 

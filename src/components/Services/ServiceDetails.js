@@ -48,7 +48,7 @@ return (
 
       <div className="service-cards">
         {services.map((service, index) => (
-          <ServiceCard
+          <ServiceCard 
             key={index}
             title={service.title}
             image={service.image}
