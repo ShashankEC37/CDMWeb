@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+    .nav-link {
+      font-size: 0.5rem; /* Adjust the font size as desired */
+    }
+  }
+.nav-link-mobile{
+    font-size: 14px;
+}
+  @media (max-width: 747px) {
+    .nav-link-mobile {
+      font-size: 2px;
+    }
+  }
+  

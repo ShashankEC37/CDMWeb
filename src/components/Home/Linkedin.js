@@ -13,7 +13,7 @@ export const LinkedInIcon = () => {
     <div style={{ textAlign: 'center' }}>
       <FontAwesomeIcon
         icon={faLinkedin}
-        style={{ color: '#0077B5', fontSize: '40px', cursor: 'pointer' }}
+        style={{ color: '#0077B5', fontSize: '50px', cursor: 'pointer' }}
         onClick={handleLinkedInClick}
       />
       <div style={{ fontSize: '16px', marginTop: '5px' }}>LinkedIn</div>

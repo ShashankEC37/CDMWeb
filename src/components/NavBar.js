@@ -110,7 +110,7 @@ export const NavBar = () => {
               Services
             </Nav.Link>
             <Nav.Link
-              href="/#project"
+              href="/portfolio"
               className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('projects')}
             >
@@ -123,6 +123,7 @@ export const NavBar = () => {
   onMouseEnter={handleMouseEnter}
   onMouseLeave={handleMouseLeave}
   onClick={() => (window.location.href = '/#connect')}
+  style={{ width: '150px' }}
 >
   <span>Let's Connect</span>
   {isHovered && (

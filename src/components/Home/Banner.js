@@ -4,7 +4,6 @@ import headerImg from "../../assets/img/header-img.svg";
 import Whatsapp from "../../assets/img/Whatsapp.png";
 import './Banner.css';
 import TrackVisibility from 'react-on-screen';
-import { textAlign } from "@mui/system";
 const isMobile = window.innerWidth <= 767;
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -66,7 +65,7 @@ export const Banner = () => {
                   {({ isVisible }) => (
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                       <br></br>
-                      <h1 className="brand-title" style={{display: "block", lineHeight:"1", letterSpacing:"0.8 px", fontWeight:"700", fontFamily: "sans-serif", fontSize: isMobile ? '30px' : '65px' }}>
+                      <h1 className="brand-title" style={{display: "block", lineHeight:"1", letterSpacing:"0.8 px", fontWeight:"700", fontFamily: "sans-serif", fontSize: isMobile ? '35px' : '65px', paddingTop: isMobile ? '0px':'10px' }}>
     Launch Your Brand into Digital Orbit
   
   </h1>

@@ -3,7 +3,6 @@ import './ServiceDetails.css';
 import { services } from './ServiceList';
 import { Close } from '@mui/icons-material';
 
-
 const ServiceCard = ({ title, image, handleCardClick }) => {
   return (
     <div className="service-card" onClick={handleCardClick}>
@@ -25,35 +24,42 @@ const ServiceDetails = () => {
     setSelectedService(null);
   };
 
-  const popupStyle =  { backgroundColor: 'white' };
+  const popupStyle = {
+    backgroundColor: 'white',
+    overflow: 'auto', // Add overflow property to enable scrolling
+    maxHeight: '100vh', // Set a maximum height for the popup content
+    padding: '20px', // Add padding on all sides
+    boxSizing: 'border-box', // Include padding in total width and height calculation
+  };
+  
+  
+  
 
-return (
-  <div className="container2">
-    <h1>Our Services</h1>
+  return (
+    <div className="container2">
+      <h1>Our Services</h1>
 
-    {selectedService && (
-      <div className="overlay">
-        <div className="popup" style={popupStyle}>
-          <h2 className="popup__details" style={{ textAlign: 'left' }}>
-            {selectedService.details}
-          </h2>
-          <button className="close-button" onClick={handleCloseClick}>
-            <Close />
-          </button>
+      {selectedService && (
+        <div className="overlay">
+          <div className="popup" style={popupStyle}>
+            <br></br>
+            <h2 className="popup__details" style={{ textAlign: 'left' }}>
+              {selectedService.details}
+            </h2>
+            <button className="close-button" onClick={handleCloseClick}>
+              <Close />
+            </button>
+          </div>
         </div>
-      </div>
-    
-
       )}
 
       <div className="service-cards">
         {services.map((service, index) => (
-          <ServiceCard 
+          <ServiceCard
             key={index}
             title={service.title}
             image={service.image}
             details={service.details}
-         
             handleCardClick={() => handleCardClick(service)}
           />
         ))}

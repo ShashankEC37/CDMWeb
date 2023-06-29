@@ -74,6 +74,16 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+.container1 {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+@media (max-width: 767px) {
+  .container1 {
+    padding: 0 0px;
+  }
+}
+
 p.success {
 	color: green;
 }
@@ -322,14 +332,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 40px 40px 0;
   position: relative;
+
 }
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 0.5rem; /* Adjust the font size as desired */
+  }
+}
+.nav-link-mobile{
+  font-size: 14px;
+}
+@media (max-width: 576px) {
+  .nav-link-mobile {
+    font-size: 0px;
+  }
+}
+
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 60px 0px;
   margin-top: -60px;
 }
 .skill h2 {
@@ -680,4 +705,3 @@ textarea {
   width: 100%;
   margin-bottom: 10px;
 }
-

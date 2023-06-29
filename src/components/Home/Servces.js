@@ -8,6 +8,7 @@ import Brainding from "../../assets/img/Branding.png";
 import DModeling from "../../assets/img/3D modeling.png";
 import Video from "../../assets/img/Video.png";
 import colorSharp from "../../assets/img/color-sharp.png";
+import { isMobile } from 'react-device-detect';
 
 
 export const MyCarousel = () => {
@@ -19,16 +20,16 @@ export const MyCarousel = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 3,
       partialVisibilityGutter: 30,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      items: 2,
       partialVisibilityGutter: 20,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 746, min: 0 },
       items: 1,
       partialVisibilityGutter: 10,
     },
@@ -38,37 +39,35 @@ export const MyCarousel = () => {
   };
   return (
     <section className="services" id="service">
-  <div className="container">
-    <div className="row">
-      <div className="col-12">
-        <div className="skill-bx wow zoomIn" style={{ width: '100%' }}>
+  <div className='container1'>
+        <div className="skill-bx" style={{ width: '100%' }}>
           <h2>Services</h2>
               <p>One Stop Solution for all your digital needs</p>
               <br />
     
-    <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={1500} className="owl-carousel owl-theme skill-slider" style={carouselStyle}>
+    <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={1500} pauseOnHover = {true} className="owl-carousel owl-theme skill-slider" style={carouselStyle}>
       <div className="item">
-        <img src={DigitalMarketing} style={{ width: '200px', height: '200px' }} alt="Image" />
+        <img src={DigitalMarketing} style={{ width: '170px', height: '170px' }} alt="Image" />
         <h5>Digital Marketing</h5>
       </div>
       <div className="item">
-        <img src={WebDevelopment} style={{ width: '200px', height: '200px' }} alt="Image" />
+        <img src={WebDevelopment} style={{ width: '170px', height: '170px' }} alt="Image" />
         <h5>Web Development</h5>
       </div>
       <div className="item">
-        <img src={SocialMedia} style={{ width: '200px', height: '200px' }} alt="Image" />
+        <img src={SocialMedia} style={{ width: '170px', height: '170px' }} alt="Image" />
         <h5>Social Media Management</h5>
       </div>
       <div className="item">
-        <img src={Brainding} style={{ width: '200px', height: '200px' }} alt="Image" />
+        <img src={Brainding} style={{ width: '170px', height: '170px' }} alt="Image" />
         <h5>Branding</h5>
       </div>
       <div className="item">
-        <img src={Video} style={{ width: '200px', height: '200px' }} alt="Image" />
+        <img src={Video} style={{ width: '170px', height: '170px' }} alt="Image" />
         <h5>Videography and Photography</h5>
       </div>
       <div className="item">
-        <img src={DModeling} style={{ width: '200px', height: '200px' }} alt="Image" />
+        <img src={DModeling} style={{ width: '170px', height: '170px' }} alt="Image" />
         <h5>3-D Modeling</h5>
       </div>
     </Carousel>
@@ -90,11 +89,8 @@ export const MyCarousel = () => {
           </button>
         </div>
       </div>
-    </div>
-  </div>
-  <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="Image" />
 </section>
   );
 };
-
 

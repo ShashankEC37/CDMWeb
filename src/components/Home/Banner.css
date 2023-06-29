@@ -2,7 +2,6 @@
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
-    padding: 10px 20px;
     font-size: 16px;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
@@ -14,11 +13,12 @@
     color: #333;
   }
   .brand-title {
+  
     font-size: 24px;
   }
   @media (max-width: 747px) {
     .brand-title {
-      font-size: 10px; /* Adjust the font-size as needed for mobile devices */
+      font-size: 60px; /* Adjust the font-size as needed for mobile devices */
       /* Add other styles specific to mobile */
     }
   }
