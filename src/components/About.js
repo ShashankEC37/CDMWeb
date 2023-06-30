@@ -6,6 +6,11 @@ import values from "../assets/img/values.png"
 import vision from "../assets/img/vision.png"
 import success from "../assets/img/Success.png"
 import partnership from "../assets/img/partnership.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init({
+  offset: 300
+});
 
 const About = () => {
   const pageStyle = {
@@ -16,7 +21,7 @@ const About = () => {
 
   return (
     <div style={pageStyle}>
-  
+      
       <Container fluid className="about-container2">
   <div className="tagline">
     <h1 className="tagline">
