@@ -39,13 +39,13 @@ export const Footer = () => {
           
         </Col>
 
-        <Col sm={12} md={4} lg={4} className="text-md-end">
-  <div className="social-icon d-flex justify-content-center align-items-center">
+        <Col sm={12} md={4} lg={4} className="text-md-end"> 
+  <div className="social-icon d-flex text-left justify-content-center align-items-left">
     <a href="https://www.linkedin.com/company/creativedigitalmedia/"><img src={navIcon1} alt="LinkedIn" /></a>
     <a href="https://www.facebook.com/ParamCDM"><img src={navIcon2} alt="Facebook" /></a>
     <a href="https://www.instagram.com/creativedigitalmedia2022/"><img src={navIcon3} alt="Instagram" /></a>
   </div>
-  <p className="text-left">&copy; 2023. All Rights Reserved</p> {/* Added className="text-left" */}
+  <p className="text-center">&copy; 2023. All Rights Reserved</p> {/* Added className="text-left" */}
 </Col>
 
 

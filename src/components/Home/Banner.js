@@ -58,22 +58,22 @@ export const Banner = () => {
 
     
           <section className="banner" id="home">
-          <Container >
+         <Container>
             <Row className="aligh-items-center">
               <Col xs={12} md={6} xl={7}>
                 <TrackVisibility>
                   {({ isVisible }) => (
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                      <br></br>
-                      <h1 className="brand-title" style={{display: "block", lineHeight:"1", letterSpacing:"0.8 px", fontWeight:"700", fontFamily: "sans-serif", fontSize: isMobile ? '35px' : '65px', paddingTop: isMobile ? '0px':'10px' }}>
+                     
+                      <h2 className="brand-title" >
     Launch Your Brand into Digital Orbit
   
-  </h1>
+  </h2>
                       <button 
   className="tagline1"
   onClick={handleClick}
   style={{
-    marginLeft: window.innerWidth > 767 ? '280px' : '40px',
+    marginLeft: window.innerWidth > 767 ? '220px' : '10px',
     textAlign: 'left',
   }}
 >

@@ -1,5 +1,7 @@
+
 .tagline1 {
     border: 1px solid #fff;
+    padding: 5px;
     background-color: transparent;
     color: #fff;
     font-size: 16px;
@@ -7,27 +9,26 @@
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
   }
+
+  
   
   .tagline1:hover {
     background-color: #fff;
     color: #333;
   }
   .brand-title {
-  
-    font-size: 24px;
+        
+    font-size: 50px;
   }
   @media (max-width: 747px) {
     .brand-title {
-      font-size: 60px; /* Adjust the font-size as needed for mobile devices */
+      font-size: 27px; /* Adjust the font-size as needed for mobile devices */
       /* Add other styles specific to mobile */
     }
   }
   
-  @media (max-width: 767px) {
-    .tagline1 {
-      margin-left: 0;
-    }
-  }
+
+  
   
   .tagline1:active {
     background-color: #fff;

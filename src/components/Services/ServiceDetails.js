@@ -29,7 +29,6 @@ const ServiceDetails = () => {
     overflow: 'auto', // Add overflow property to enable scrolling
     maxHeight: '100vh', // Set a maximum height for the popup content
     padding: '20px', // Add padding on all sides
-    boxSizing: 'border-box', // Include padding in total width and height calculation
   };
   
   
