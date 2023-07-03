@@ -7,20 +7,11 @@ import vision from "../assets/img/vision.png"
 import success from "../assets/img/Success.png"
 import partnership from "../assets/img/partnership.png";
 import AOS from 'aos';
-<<<<<<< HEAD
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init({
-  offset: 120,
-  duration: 1000,
-});
-=======
 import 'aos/dist/aos.css'; 
 AOS.init({
   offset: 300
 });
 
->>>>>>> 0b530ea0680d2b523306b68074433ddb9b44d037
 const About = () => {
   const pageStyle = {
     background: '#1a0537',
@@ -30,13 +21,8 @@ const About = () => {
 
   return (
     <div style={pageStyle}>
-<<<<<<< HEAD
-  
-      <Container fluid className="about-container2" data-aos="zoom-in-down">
-=======
       
       <Container fluid className="about-container2">
->>>>>>> 0b530ea0680d2b523306b68074433ddb9b44d037
   <div className="tagline">
     <h1 className="tagline">
       <strong>Empowering Digital Success Through Innovative Solutions</strong>

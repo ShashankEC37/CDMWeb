@@ -103,11 +103,7 @@ export const services = [
   {
     title: 'Videography and Photography',
     image: Videography,
-<<<<<<< HEAD
     details :(<div><br></br><br></br><br></br><br></br><br></br><br></br><br></br><h3><strong>Videography and Photography</strong></h3><p className ="service-paragraph"><h5><strong>Product Photoshoots:</strong></h5> Our professional photographers skillfully capture your products in the best light, creating visually appealing images that enhance their appeal and entice potential customers.</p>
-=======
-    details :(<div><h3><strong>Videography and Photography</strong></h3><p className ="service-paragraph"><h5><strong>Product Photoshoots:</strong></h5> Our professional photographers skillfully capture your products in the best light, creating visually appealing images that enhance their appeal and entice potential customers.</p>
->>>>>>> 0b530ea0680d2b523306b68074433ddb9b44d037
     <p className ="service-paragraph"><h5><strong>2D Animated Videos:</strong></h5> Engage your audience with captivating 2D animated videos. We leverage the power of animation to tell your brand's story, explain complex concepts, and deliver your message in an engaging and memorable way</p>
    <p className ="service-paragraph"><h5><strong>Video Creation:</strong></h5> From promotional videos to explainer videos, our video creation services help you effectively communicate your message. Our team handles the entire video production process, delivering high-quality videos that resonate with your target audience</p>
    <p className ="service-paragraph"><h5><strong>Head Shot:</strong></h5> Elevate your professional image online with expertly crafted head shots by our professional photographers. Make a lasting impression with captivating and high-quality images that reflect your unique personality and brand.</p>

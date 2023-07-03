@@ -16,6 +16,49 @@ import crystal from "../../assets/img/logos/Crystal ahrine.png";
 import SOM from "../../assets/img/logos/SOM.png";
 import Speaking from "../../assets/img/logos/Speaking Bricks.png";
 import comtech from "../../assets/img/logos/comtech.png";
+import ComtechBusinessCard from "../../assets/img/Business card/Comtech Business Card.png"
+import Lightanddecor from "../../assets/img/Business card/Light and decor business-card.png"
+import SOMBusnessCard from "../../assets/img/Business card/SOM.png"
+import StudioLineBusinessCard from "../../assets/img/Business card/Studio line.png"
+import fifteabusinesscard from "../../assets/img/Business card/fiftea business card.png"
+
+import Lightsanddecor from "../../assets/img/Brochure/Lights and decor.png"
+import Lightsanddecor2 from "../../assets/img/Brochure/Lights and Decor 2.png"
+import Rup1 from "../../assets/img/Brochure/RUP brochure 2.png"
+import Rup2 from "../../assets/img/Brochure/Rup Brochure.png";
+
+import Accuspiralsflyers from "../../assets/img/Flyers/Accuspirals flyers.png";
+import Lights_decorFlyer from "../../assets/img/Flyers/Lights _ decor Flyer.png";
+import PropertySaleFlyer from "../../assets/img/Flyers/Property Sale Flyer.png";
+import RUPFlyer from "../../assets/img/Flyers/RUP.png";
+import SOMflyers from "../../assets/img/Flyers/SOM flyers.png";
+import UrbanDesk from "../../assets/img/Flyers/Urban Desk.png";
+
+import CarclassicLetterHead from "../../assets/img/Letterheads/Carclassic.png";
+import CDMLetterHead from "../../assets/img/Letterheads/CDM Letterhead.png";
+import ComtecLetterHead from "../../assets/img/Letterheads/Comtec Letterhead.png";
+import Light_decorLetterHead from "../../assets/img/Letterheads/Light _ decor letterhead.png";
+import RUPLetterHead from "../../assets/img/Letterheads/RUP Letterhead.png";
+import SOMLetterHead from "../../assets/img/Letterheads/SOM Letterhead.png";
+
+import ComtechCombines from "../../assets/img/Combines/Comtech.png";
+import Lights_decorCombines from "../../assets/img/Combines/Lights _ decor.png";
+import RUPCombines from "../../assets/img/Combines/RUP.png";
+import SOMCombines from "../../assets/img/Combines/SOM letterhead _ business.png";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const Projects = () => {
   const projects = [
@@ -29,31 +72,31 @@ export const Projects = () => {
       title: "Business Cards",
       description: "Click to know more",
       imgUrl: BusinessCard,
-      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech]
+      Popupdisplay: [,BusinessCard,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard]
     },
     {
       title: "Brochures",
       description: "Click to know more",
       imgUrl: Brochures,
-      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech]
+      Popupdisplay: [Rup1, Rup2 , Lightsanddecor,Lightsanddecor2,PropertySaleFlyer, RUPFlyer,SOMflyers,UrbanDesk]
     },
     {
       title: "Flyers",
       description: "Click to know more",
       imgUrl: Flyers,
-      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech]
+      Popupdisplay: [Accuspiralsflyers,Lights_decorFlyer,PropertySaleFlyer,RUPFlyer,SOMflyers,UrbanDesk]
     },
     {
       title: "Leaterhead",
       description: "Click to know more",
       imgUrl: Leaterhead,
-      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech]
+      Popupdisplay: [CarclassicLetterHead,CDMLetterHead,ComtecLetterHead,Light_decorLetterHead,RUPLetterHead,SOMLetterHead]
     },
     {
       title: "Combines",
       description: "Click to know more",
       imgUrl: combines,
-      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech]
+      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines]
     },
   ];
 

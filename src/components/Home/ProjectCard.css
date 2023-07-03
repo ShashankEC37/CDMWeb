@@ -1,68 +1,91 @@
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup1 {
+ 
+  background: #151515;
+  border-radius: 64px;
+  overflow: auto;
+  max-height: 100vh;
   
-  .popup img {
-    width: 100%;
-    height: auto;
-    max-height: 90vh;
-    object-fit: contain;
+  width: 100%;
+  max-width: 1600px;
+  position: relative;
+}
+.popup1 {
+  padding: 50px 0px 0px 0px;
+  position: relative;
+
+}
+
+
+
+.popup1 h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.popup1 p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+}
+.popup1-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.popup1-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+/* Adjust the styles as needed */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite; /* Adjust the duration as desired */
+}
+
+.carousel-item {
+  width: 200px;
+  flex-shrink: 0;
+  padding: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
   }
-  .carousel-container {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Keep the images in a single line */
-    margin: 0 auto;
-    width: 100%;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .carousel-item {
-    display: inline-block; /* Display the images in a line */
-    margin-right: 10px; /* Add spacing between images */
-  }
-  
-  .carousel .slider-wrapper {
-    overflow: visible !important; /* Show the entire Carousel content */
-  }
-  .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup {
-    background-color: #ffffff; /* White background for the popup */
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .carousel-container {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Keep the images in a single line */
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  .carousel-item {
-    display: inline-block; /* Display the images in a line */
-    margin-right: 10px; /* Add spacing between images */
-  }
-  
-  .carousel .slider-wrapper {
-    overflow: visible !important; /* Show the entire Carousel content */
-  }
-  
+}
