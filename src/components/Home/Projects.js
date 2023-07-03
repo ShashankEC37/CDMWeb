@@ -1,13 +1,13 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import "./Project.css";
-import Logo from "../../assets/img/CDM logo.png";
-import Brochures from "../../assets/img/Rup Brochure.png";
-import BusinessCard from "../../assets/img/Business Card.png";
+import Logo from "../../assets/img/CDM logo.jpg";
+import Brochures from "../../assets/img/Rup Brochure.jpg";
+import BusinessCard from "../../assets/img/Business Card.jpg";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
-import Flyers from "../../assets/img/SOM flyers.png";
-import Leaterhead from "../../assets/img/RUP Letterhead.png";
-import combines from "../../assets/img/RUP combine.png";
+import Flyers from "../../assets/img/SOM flyers.jpg";
+import Leaterhead from "../../assets/img/RUP Letterhead.jpg";
+import combines from "../../assets/img/RUP combine.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -66,37 +66,43 @@ export const Projects = () => {
       title: "Logo",
       description: "Click to know more",
       imgUrl: Logo,
-      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech]
+      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech],
+      Company: ["Creative Digital Media ", "Crystal Ahrine", "School Of Masters", "Speaking Bricks", "Comtech"]
     },
     {
       title: "Business Cards",
       description: "Click to know more",
       imgUrl: BusinessCard,
-      Popupdisplay: [,BusinessCard,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard]
+      Popupdisplay: [BusinessCard,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard],
+      Company: ["Shalini Mukund ", "Light and Decor", "School Of Masters", "Studio Line2", "Comtech","Fiftea"]
     },
     {
       title: "Brochures",
       description: "Click to know more",
       imgUrl: Brochures,
-      Popupdisplay: [Rup1, Rup2 , Lightsanddecor,Lightsanddecor2,PropertySaleFlyer, RUPFlyer,SOMflyers,UrbanDesk]
+      Popupdisplay: [Rup1, Rup2 , Lightsanddecor,Lightsanddecor2,],
+      Company: ["Rup Rubber Enterprise ", "Rup Rubber Enterprise", "Light and Decor", "Light and Decor"]
     },
     {
       title: "Flyers",
       description: "Click to know more",
       imgUrl: Flyers,
-      Popupdisplay: [Accuspiralsflyers,Lights_decorFlyer,PropertySaleFlyer,RUPFlyer,SOMflyers,UrbanDesk]
+      Popupdisplay: [Accuspiralsflyers,Lights_decorFlyer,PropertySaleFlyer,RUPFlyer,SOMflyers,UrbanDesk],
+      Company: ["Accuspirals ", "Light and Decor", "PropertySale", "Rup Rubber Enterprise", "School Of Masters","UrbanDesk"]
     },
     {
       title: "Leaterhead",
       description: "Click to know more",
       imgUrl: Leaterhead,
-      Popupdisplay: [CarclassicLetterHead,CDMLetterHead,ComtecLetterHead,Light_decorLetterHead,RUPLetterHead,SOMLetterHead]
+      Popupdisplay: [CarclassicLetterHead,CDMLetterHead,ComtecLetterHead,Light_decorLetterHead,RUPLetterHead,SOMLetterHead],
+      Company: ["Carclassic ", "Creative Digital Media", "Comtec", "Light and Decor", "Rup Rubber Enterprise ","School Of Masters"]
     },
     {
       title: "Combines",
       description: "Click to know more",
       imgUrl: combines,
-      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines]
+      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
+      Company: ["Comtech ", "Light and Decor", "Rup Rubber Enterprise", "Speaking Bricks", "School Of Masters"]
     },
   ];
 

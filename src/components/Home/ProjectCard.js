@@ -67,30 +67,34 @@ export const ProjectCard = ({ title, description, imgUrl, Popupdisplay, Company 
 
 
       {popupVisible && (
-        <div className="overlay">
-          <div className="popup1" style={popupStyle}>
-         
-      
-            
-          <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={1500} pauseOnHover = {true} className="owl-carousel owl-theme skill-slider" style={carouselStyle}>
-              {Popupdisplay.map((image, index) => (
-                <div key={index} className="item"  >
+      <div className="overlay">
+        <div className="popup1" style={popupStyle}>
+          <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={1500} pauseOnHover={true} className="owl-carousel owl-theme skill-slider" style={carouselStyle}>
+            {Popupdisplay.map((image, index) => (
+              <div key={index} className="item">
+               <img
+  src={image}
+  style={{
+    width: '100%',
+    maxWidth: '400px',
+    height: '400px',
+    transition: 'max-width 0.3s ease',
+  }}
+  alt={`Popup Image ${index}`}
+  className="hoverable-image"
+/>
 
-                  <img src={image} style={{ width: '400px', height: '400px' }} alt={`Popup Image ${index}`} />
-                  <h5 style={{ color: 'black' }}>Client</h5>
-
-                </div>
-              ))}
-               
-            </Carousel>
-            <button className="close-button" onClick={handleCloseClick}>
-              <Close />
-            </button>
-          </div>
+                <h4 style={{ color: 'black' }}>{Company[index]}</h4>
+              </div>
+            ))}
+          </Carousel>
+          <button className="close-button" onClick={handleCloseClick}>
+            <Close />
+          </button>
         </div>
-     
-   
-      )}
-    </Col>
+      </div>
+    )}
+
+  </Col>
   );
 };
