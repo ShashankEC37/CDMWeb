@@ -62,7 +62,8 @@ export const services = [
     image: Branding,
     details: (
    
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
+        
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', textAlign: 'left' }}>
        
         <h3>Branding</h3>
@@ -82,9 +83,10 @@ export const services = [
   <p className ="service-paragraph">13. Whitepapers</p>
   <p className ="service-paragraph">14. Brand Identity</p>
 </div>
-<div style={{ textAlign: 'right' }}>
-    <img src={branding} alt="Responsive" style={{ width: '250px' }}/>
-  </div>
+
+<div style={{ display: 'flex', justifyContent: 'left' ,alignItems:'left'}}>
+  <img src={branding} alt="Responsive" style={{ width: '250px',justifyContent: 'left', marginLeft: "30px" }} />
+</div>
 </div>   
     ),
   
@@ -94,7 +96,7 @@ export const services = [
     title: '3D Modeling',
     image: Modeling,
     details : (
-    <div><h3>3D Modeling</h3><p className ="service-paragraph"><strong>Realistic visuals:</strong> 3D models can be created to look exactly like real objects, making them ideal for use in marketing materials, product design, and video games. This can help you to create more engaging and persuasive content for your website.</p>
+    <div><h3><strong>3D Modeling</strong></h3><p className ="service-paragraph"><strong>Realistic visuals:</strong> 3D models can be created to look exactly like real objects, making them ideal for use in marketing materials, product design, and video games. This can help you to create more engaging and persuasive content for your website.</p>
    <p className ="service-paragraph"><h3><strong> Efficiency: </strong></h3>3D models can be used to create prototypes and test designs, which can save time and money in the development process. This can help you to bring your products to market faster and more efficiently</p>
    <p className ="service-paragraph"><h3><strong> Creativity:</strong></h3> 3D modeling allows designers to create objects that would be impossible or difficult to create in the real world. This can help you to create unique and eye-catching content for your website that will stand out from the competition.</p>
    <img src={DModeling} alt="Responsive" style={{ width: '200px' }} />

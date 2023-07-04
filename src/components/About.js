@@ -9,8 +9,9 @@ import partnership from "../assets/img/partnership.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init({
-  offset: 300
-});
+  offset: 200,
+  duration: 800
+  });
 
 const About = () => {
   const pageStyle = {
@@ -22,7 +23,7 @@ const About = () => {
   return (
     <div style={pageStyle}>
       
-      <Container fluid className="about-container2">
+      <Container fluid className="about-container2" data-aos="fade-down" >
   <div className="tagline">
     <h1 className="tagline">
       <strong>Empowering Digital Success Through Innovative Solutions</strong>
@@ -35,12 +36,17 @@ const About = () => {
         <div className="values">
     <div> <h1 className="vision" style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}><strong>About</strong></h1>
  </div>
-        
  <div className="About" style={{ textAlign: 'justify' }}>
- <h4 style={{ textAlign: 'justify', fontSize: '25px' }}>
-  Established in August 2022, Creative Digital Media is a leading full-service digital marketing company. We excel in providing comprehensive back-end tech support to empower organizations in their digital marketing endeavors. Our unwavering mission is to deliver unparalleled services, enabling our clients to achieve exceptional results in the ever-evolving digital landscape. With a fusion of creativity and cutting-edge technology, we offer a diverse range of solutions, including social media management, website design and development, video production, and much more. Guided by our core values of integrity, accountability, timely delivery, and honesty, we strive to build enduring partnerships based on trust and transparency. Our visionary approach aims to become a global leader, alleviating organizational stress through seamless and innovative digital solutions, while continuously evolving to meet our clients' dynamic needs.
-</h4>
-
+  <h4 style={{ textAlign: 'justify', fontSize: '25px' }} data-aos="fade-right">
+    Established in August 2022, Creative Digital Media is a leading full-service digital marketing company. We provide comprehensive back-end tech support to empower organizations in their digital marketing endeavors.
+  </h4>
+  <h4 style={{ textAlign: 'justify', fontSize: '25px' }} data-aos="fade-right" data-aos-delay="500">
+    Our mission is to deliver unparalleled services, enabling clients to achieve exceptional results in the ever-evolving digital landscape. With a fusion of creativity and cutting-edge technology, we offer solutions like social media management, website design and development, video production, and more.
+  </h4>
+  <h4 style={{ textAlign: 'justify', fontSize: '25px' }} data-aos="fade-right" data-aos-delay="1000">
+    Guided by our core values of integrity, accountability, timely delivery, and honesty, we build enduring partnerships based on trust and transparency. Our visionary approach aims to become a global leader, offering seamless and innovative digital solutions, evolving to meet clients' dynamic needs.
+  </h4>
+</div>
 
 
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -49,7 +55,7 @@ const About = () => {
                 </div>
               </div>
               </div>
-            </div>
+        
       </Container>
       <Container fluid className="about-container2 " data-aos="fade-in">
   <div className="section1" style={{ backgroundColor: 'white', padding: '10px', color: 'black', borderRadius: '10px', display: 'flex', alignItems: 'center' }}>

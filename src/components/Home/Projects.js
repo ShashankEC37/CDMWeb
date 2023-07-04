@@ -46,7 +46,36 @@ import Lights_decorCombines from "../../assets/img/Combines/Lights _ decor.png";
 import RUPCombines from "../../assets/img/Combines/RUP.png";
 import SOMCombines from "../../assets/img/Combines/SOM letterhead _ business.png";
 
+import CDMSOcial4 from "../../assets/img/Social Media Posters/CDM/Poster4-CDM.png"
+import CDMSOcial1 from "../../assets/img/Social Media Posters/CDM/Poster1-CDM.png"
+import CDMSOcial2 from "../../assets/img/Social Media Posters/CDM/Poster2-CDM.png"
+import CDMSOcial3 from "../../assets/img/Social Media Posters/CDM/Poster3-CDM.png"
+import CDMSOcial5 from "../../assets/img/Social Media Posters/CDM/Poster5-CDM.png"
+import CDMSOcial6 from "../../assets/img/Social Media Posters/CDM/Poster6-CDM.png"
+import CDMSOcial7 from "../../assets/img/Social Media Posters/CDM/Poster7-CDM.png"
+import CDMSOcial8 from "../../assets/img/Social Media Posters/CDM/Poster8-CDM.png"
+import CDMSOcial9 from "../../assets/img/Social Media Posters/CDM/Poster9-CDM.png"
+import CDMSOcial10 from "../../assets/img/Social Media Posters/CDM/Poster10-CDM.png"
+import CDMSOcial11 from "../../assets/img/Social Media Posters/CDM/Poster11-CDM.png"
+import CDM from "../../assets/img/Social Media Post/CDM.png"
 
+import VOM from "../../assets/img/Social Media Post/Voice o magic Social media post.png"
+import Poster1 from "../../assets/img/Social Media Posters/Voice o magic/Poster13-Jan-SM.png"
+import Poster2 from "../../assets/img/Social Media Posters/Voice o magic/Poster20-Jan-SM.png"
+import Poster3 from "../../assets/img/Social Media Posters/Voice o magic/Poster13-Jan-SM.png"
+import Poster4 from "../../assets/img/Social Media Posters/Voice o magic/Poster13-Jan-SM.png"
+import Poster5 from "../../assets/img/Social Media Posters/Voice o magic/Poster13-Jan-SM.png"
+
+
+
+import SOMFestivals from "../../assets/img/Social Media Post/SOM Festivals.png"
+import a from "../../assets/img/Social Media Posters/Festival Posters/a.png"
+import b from "../../assets/img/Social Media Posters/Festival Posters/b.png"
+import c from "../../assets/img/Social Media Posters/Festival Posters/c.png"
+import d from "../../assets/img/Social Media Posters/Festival Posters/d.png"
+import f from "../../assets/img/Social Media Posters/Festival Posters/f.png"
+import g from "../../assets/img/Social Media Posters/Festival Posters/g.png"
+import h from "../../assets/img/Social Media Posters/Festival Posters/h.png"
 
 
 
@@ -67,45 +96,83 @@ export const Projects = () => {
       description: "Click to know more",
       imgUrl: Logo,
       Popupdisplay: [cdm, crystal, SOM, Speaking, comtech],
-      Company: ["Creative Digital Media ", "Crystal Ahrine", "School Of Masters", "Speaking Bricks", "Comtech"]
+      Company: ["CREATIVE DIGITAL MEDIA", "CRYSTAL AHTINE", "SCHOOL OF MASTERS", "SPEAKING BRICKS", "COMTECH"]
     },
     {
       title: "Business Cards",
       description: "Click to know more",
       imgUrl: BusinessCard,
       Popupdisplay: [BusinessCard,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard],
-      Company: ["Shalini Mukund ", "Light and Decor", "School Of Masters", "Studio Line2", "Comtech","Fiftea"]
+      Company: ["SHALINI MUKUND", "LIGHT AND DECOR", "SCHOOL OF MASTERS", "STUDIO LINE2", "COMTECH", "FIFTEA"]
     },
     {
       title: "Brochures",
       description: "Click to know more",
       imgUrl: Brochures,
       Popupdisplay: [Rup1, Rup2 , Lightsanddecor,Lightsanddecor2,],
-      Company: ["Rup Rubber Enterprise ", "Rup Rubber Enterprise", "Light and Decor", "Light and Decor"]
+      Company: ["RUP RUBBER ENTERPRISE", "RUP RUBBER ENTERPRISE", "LIGHT AND DECOR", "LIGHT AND DECOR"]
     },
     {
       title: "Flyers",
       description: "Click to know more",
       imgUrl: Flyers,
       Popupdisplay: [Accuspiralsflyers,Lights_decorFlyer,PropertySaleFlyer,RUPFlyer,SOMflyers,UrbanDesk],
-      Company: ["Accuspirals ", "Light and Decor", "PropertySale", "Rup Rubber Enterprise", "School Of Masters","UrbanDesk"]
+      Company: ["ACCUSPIRALS", "LIGHT AND DECOR", "PROPERTYSALE", "RUP RUBBER ENTERPRISE", "SCHOOL OF MASTERS", "URBANDESK"]
     },
     {
       title: "Leaterhead",
       description: "Click to know more",
       imgUrl: Leaterhead,
       Popupdisplay: [CarclassicLetterHead,CDMLetterHead,ComtecLetterHead,Light_decorLetterHead,RUPLetterHead,SOMLetterHead],
-      Company: ["Carclassic ", "Creative Digital Media", "Comtec", "Light and Decor", "Rup Rubber Enterprise ","School Of Masters"]
+      Company: ["CARCLASSIC", "CREATIVE DIGITAL MEDIA", "COMTEC", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SCHOOL OF MASTERS"]
     },
     {
       title: "Combines",
       description: "Click to know more",
       imgUrl: combines,
       Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
-      Company: ["Comtech ", "Light and Decor", "Rup Rubber Enterprise", "Speaking Bricks", "School Of Masters"]
+      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
     },
   ];
 
+  const websites = [
+    {
+      title : "School of masters",
+      description: "Click to knoe more",
+      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
+      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+    }
+  ];
+  const social = [
+    {
+      title: "Creative Digital Media",
+      description : "Click to know more",
+      imgUrl: CDM,
+      Popupdisplay: [CDMSOcial1,CDMSOcial2,CDMSOcial3,CDMSOcial4,CDMSOcial5,CDMSOcial6,CDMSOcial7,CDMSOcial8,CDMSOcial9,CDMSOcial10,CDMSOcial11],
+      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+    },
+    {
+      title: "Client",
+      description : "Click to know more",
+      imgUrl: VOM,
+      Popupdisplay: [Poster1,Poster2,Poster3,Poster4,Poster5],
+      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+    },{
+      title: "Festivals",
+      description : "Click to know more",
+      imgUrl: SOMFestivals,
+      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
+      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+    },
+    {
+      title: "Creative Digital Media",
+      description : "Click to know more",
+      imgUrl: CDMSOcial1,
+      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
+      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+    },
+
+  ]
   return (
     <section className="project" id="project">
       <Container fluid style={{ width: "100%" }}>
@@ -140,11 +207,24 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row className="justify-content-center">
+                          {websites.map((website, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...website}
+                            />
+                          ))}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                      </Tab.Pane>
+                      <Row className="justify-content-center">
+                          {social.map((posts, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...posts}
+                            />
+                          ))}
+                        </Row>                      </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
                 </div>

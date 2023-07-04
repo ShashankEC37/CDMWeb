@@ -184,7 +184,6 @@
   
   .About {
     /* Styles for large screens */
-
     color: #1a0537;
     font-size: 19px; /* Adjust the font size as desired */
   }
@@ -241,7 +240,7 @@
 
   .about-container2 div.values h1.vision {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .about-container2 div.values img {

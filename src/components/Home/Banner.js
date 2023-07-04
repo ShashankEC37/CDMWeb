@@ -66,7 +66,11 @@ export const Banner = () => {
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                      
                       <h2 className="brand-title" >
-    Launch Your Brand into Digital Orbit
+    Launch Your Brand into 
+  
+  </h2>
+  <h2 className="brand-title" >
+    Digital Orbit 
   
   </h2>
                       <button 

@@ -56,7 +56,7 @@ export const ProjectCard = ({ title, description, imgUrl, Popupdisplay, Company 
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx" onClick={handleImageClick}>
-        <img src={imgUrl} alt={title} onClick={handleImageClick}/>
+      <img src={imgUrl} alt={title} onClick={handleImageClick} width="400" height="300" />
         <div  className="proj-txtx" onClick={handleImageClick}>
           <h4>{title}</h4>
           <span  onClick={handleImageClick}>{description}</span>
@@ -75,9 +75,8 @@ export const ProjectCard = ({ title, description, imgUrl, Popupdisplay, Company 
                <img
   src={image}
   style={{
-    width: '100%',
-    maxWidth: '400px',
-    height: '400px',
+    width: '70%',
+    height: 'auto',
     transition: 'max-width 0.3s ease',
   }}
   alt={`Popup Image ${index}`}

@@ -41,7 +41,7 @@ export const Contact = () => {
     }
 
     if (!isPhoneValid(phone)) {
-      setStatus({ success: false, message: 'Please enter a valid phone number' });
+      setStatus({ success: false, message: 'Please enter a  valid phone number' });
       return;
     }
 

@@ -1,0 +1,186 @@
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
+import "./Project.css";
+import Logo from "../../assets/img/CDM logo.jpg";
+import Brochures from "../../assets/img/Rup Brochure.jpg";
+import BusinessCard from "../../assets/img/Business Card.jpg";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
+import Flyers from "../../assets/img/SOM flyers.jpg";
+import Leaterhead from "../../assets/img/RUP Letterhead.jpg";
+import combines from "../../assets/img/RUP combine.jpg";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
+import cdm from "../../assets/img/logos/CDM logo.png";
+import crystal from "../../assets/img/logos/Crystal ahrine.png";
+import SOM from "../../assets/img/logos/SOM.png";
+import Speaking from "../../assets/img/logos/Speaking Bricks.png";
+import comtech from "../../assets/img/logos/comtech.png";
+import ComtechBusinessCard from "../../assets/img/Business card/Comtech Business Card.png"
+import Lightanddecor from "../../assets/img/Business card/Light and decor business-card.png"
+import SOMBusnessCard from "../../assets/img/Business card/SOM.png"
+import StudioLineBusinessCard from "../../assets/img/Business card/Studio line.png"
+import fifteabusinesscard from "../../assets/img/Business card/fiftea business card.png"
+
+import Lightsanddecor from "../../assets/img/Brochure/Lights and decor.png"
+import Lightsanddecor2 from "../../assets/img/Brochure/Lights and Decor 2.png"
+import Rup1 from "../../assets/img/Brochure/RUP brochure 2.png"
+import Rup2 from "../../assets/img/Brochure/Rup Brochure.png";
+
+import Accuspiralsflyers from "../../assets/img/Flyers/Accuspirals flyers.png";
+import Lights_decorFlyer from "../../assets/img/Flyers/Lights _ decor Flyer.png";
+import PropertySaleFlyer from "../../assets/img/Flyers/Property Sale Flyer.png";
+import RUPFlyer from "../../assets/img/Flyers/RUP.png";
+import SOMflyers from "../../assets/img/Flyers/SOM flyers.png";
+import UrbanDesk from "../../assets/img/Flyers/Urban Desk.png";
+
+import CarclassicLetterHead from "../../assets/img/Letterheads/Carclassic.png";
+import CDMLetterHead from "../../assets/img/Letterheads/CDM Letterhead.png";
+import ComtecLetterHead from "../../assets/img/Letterheads/Comtec Letterhead.png";
+import Light_decorLetterHead from "../../assets/img/Letterheads/Light _ decor letterhead.png";
+import RUPLetterHead from "../../assets/img/Letterheads/RUP Letterhead.png";
+import SOMLetterHead from "../../assets/img/Letterheads/SOM Letterhead.png";
+
+import ComtechCombines from "../../assets/img/Combines/Comtech.png";
+import Lights_decorCombines from "../../assets/img/Combines/Lights _ decor.png";
+import RUPCombines from "../../assets/img/Combines/RUP.png";
+import SOMCombines from "../../assets/img/Combines/SOM letterhead _ business.png";
+
+  // import Poster1CDM from "../../assets/img/Social Media Posters/CDM/Poster 4 - CDM.png"
+  // import Poster2CDM from "../../assets/img/Social Media Posters/CDM/Poster 1 - CDM.png"
+  // import Poster3CDM from "../../assets/img/Social Media Posters/CDM/Poster 2 - CDM.png"
+  // import Poster4CDM from "../../assets/img/Social Media Posters/CDM/Poster 3 - CDM.png"
+  // import Poster5CDM from "../../assets/img/Social Media Posters/CDM/Poster 5 - CDM.png"
+  // import Poster6CDM from "../../assets/img/Social Media Posters/CDM/Poster 6 - CDM.png"
+  // import Poster7CDM from "../../assets/img/Social Media Posters/CDM/Poster 7 - CDM.png"
+  // import Poster8CDM from "../../assets/img/Social Media Posters/CDM/Poster 8 - CDM.png"
+  // import Poster9CDM from "../../assets/img/Social Media Posters/CDM/Poster 9 - CDM.png"
+  // import Poster10CDM from "../../assets/img/Social Media Posters/CDM/Poster 10 - CDM.png"
+  // import Poster11CDM from "../../assets/img/Social Media Posters/CDM/Poster 11 - CDM.png"
+
+
+
+
+ const Projects = () => {
+  const projects = [
+    {
+      title: "Logo",
+      description: "Click to know more",
+      imgUrl: Logo,
+      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech],
+      Company: ["Creative Digital Media ", "Crystal Ahrine", "School Of Masters", "Speaking Bricks", "Comtech"]
+    },
+    {
+      title: "Business Cards",
+      description: "Click to know more",
+      imgUrl: BusinessCard,
+      Popupdisplay: [BusinessCard,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard],
+      Company: ["Shalini Mukund ", "Light and Decor", "School Of Masters", "Studio Line2", "Comtech","Fiftea"]
+    },
+    {
+      title: "Brochures",
+      description: "Click to know more",
+      imgUrl: Brochures,
+      Popupdisplay: [Rup1, Rup2 , Lightsanddecor,Lightsanddecor2,],
+      Company: ["Rup Rubber Enterprise ", "Rup Rubber Enterprise", "Light and Decor", "Light and Decor"]
+    },
+    {
+      title: "Flyers",
+      description: "Click to know more",
+      imgUrl: Flyers,
+      Popupdisplay: [Accuspiralsflyers,Lights_decorFlyer,PropertySaleFlyer,RUPFlyer,SOMflyers,UrbanDesk],
+      Company: ["Accuspirals ", "Light and Decor", "PropertySale", "Rup Rubber Enterprise", "School Of Masters","UrbanDesk"]
+    },
+    {
+      title: "Leaterhead",
+      description: "Click to know more",
+      imgUrl: Leaterhead,
+      Popupdisplay: [CarclassicLetterHead,CDMLetterHead,ComtecLetterHead,Light_decorLetterHead,RUPLetterHead,SOMLetterHead],
+      Company: ["Carclassic ", "Creative Digital Media", "Comtec", "Light and Decor", "Rup Rubber Enterprise ","School Of Masters"]
+    },
+    {
+      title: "Combines",
+      description: "Click to know more",
+      imgUrl: combines,
+      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
+      Company: ["Comtech ", "Light and Decor", "Rup Rubber Enterprise", "Speaking Bricks", "School Of Masters"]
+    },
+  ];
+
+  const Social = [
+    {
+      title: "Creative Digital Media",
+      description: "Click to know more",
+      imgUrl: Poster1CDM,
+      Popupdisplay: [Poster2CDM, Poster3CDM, Poster4CDM, Poster5CDM, Poster6CDM,Poster7CDM,Poster8CDM,Poster9CDM,Poster10CDM,Poster11CDM]
+    },
+  ]
+
+  return (
+    <section className="project" id="project"  >
+    <Container fluid style={{ width: "100%", paddingTop: "40px" }}>
+        <Row >
+          <Col size={12}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div className={`animate__animated ${isVisible ? "animate__fadeIn" : ""}` }  >
+                  <h2>Portfolio</h2>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first" className="nav-link-mobile">Branding</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second" className="nav-link-mobile">Web Development</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third" className="nav-link-mobile">Social Media</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+
+                    <Tab.Content id="slideInUp" className={`animate__animated ${isVisible ? "animate__slideInUp" : ""}`}>
+                      <Tab.Pane eventKey="first">
+                        <Row className="justify-content-center">
+                          {projects.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                      {/* <Row className="justify-content-center">
+                          {Webdev.map((site, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...site}
+                            />
+                          ))}
+                        </Row> */}
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                      <Row className="justify-content-center">
+                          {/* {Social.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))} */}
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+      <img className="background-image-right" src={colorSharp2} alt="Image" />
+    </section>
+  );
+}
+export default Projects
+
+
