@@ -16,6 +16,8 @@ import crystal from "../../assets/img/logos/Crystal ahrine.png";
 import SOM from "../../assets/img/logos/SOM.png";
 import Speaking from "../../assets/img/logos/Speaking Bricks.png";
 import comtech from "../../assets/img/logos/comtech.png";
+
+import ShaliniMukund from "../../assets/img/Business card/ShaliniMukund.png"
 import ComtechBusinessCard from "../../assets/img/Business card/Comtech Business Card.png"
 import Lightanddecor from "../../assets/img/Business card/Light and decor business-card.png"
 import SOMBusnessCard from "../../assets/img/Business card/SOM.png"
@@ -69,13 +71,21 @@ import Poster5 from "../../assets/img/Social Media Posters/Voice o magic/Poster1
 
 
 import SOMFestivals from "../../assets/img/Social Media Post/SOM Festivals.png"
-import a from "../../assets/img/Social Media Posters/Festival Posters/a.png"
+import a from "../../assets/img/Social Media Posters/Festival Posters/a.jpg"
 import b from "../../assets/img/Social Media Posters/Festival Posters/b.png"
 import c from "../../assets/img/Social Media Posters/Festival Posters/c.png"
 import d from "../../assets/img/Social Media Posters/Festival Posters/d.png"
 import f from "../../assets/img/Social Media Posters/Festival Posters/f.png"
-import g from "../../assets/img/Social Media Posters/Festival Posters/g.png"
 import h from "../../assets/img/Social Media Posters/Festival Posters/h.png"
+import k from "../../assets/img/Social Media Posters/Festival Posters/k.png"
+import l from "../../assets/img/Social Media Posters/Festival Posters/l.png"
+import m from "../../assets/img/Social Media Posters/Festival Posters/m.png"
+import n from "../../assets/img/Social Media Posters/Festival Posters/n.png"
+import s from "../../assets/img/Social Media Posters/Festival Posters/s.png"
+import v from "../../assets/img/Social Media Posters/Festival Posters/v.png"
+import x from "../../assets/img/Social Media Posters/Festival Posters/x.png"
+import z from "../../assets/img/Social Media Posters/Festival Posters/z.png"
+
 
 
 
@@ -102,7 +112,7 @@ export const Projects = () => {
       title: "Business Cards",
       description: "Click to know more",
       imgUrl: BusinessCard,
-      Popupdisplay: [BusinessCard,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard],
+      Popupdisplay: [ShaliniMukund,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard],
       Company: ["SHALINI MUKUND", "LIGHT AND DECOR", "SCHOOL OF MASTERS", "STUDIO LINE2", "COMTECH", "FIFTEA"]
     },
     {
@@ -161,16 +171,9 @@ export const Projects = () => {
       title: "Festivals",
       description : "Click to know more",
       imgUrl: SOMFestivals,
-      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
-      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
-    },
-    {
-      title: "Creative Digital Media",
-      description : "Click to know more",
-      imgUrl: CDMSOcial1,
-      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
-      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
-    },
+      Popupdisplay: [a,b,c,d,f,h,k,l,m,n,s,v,x,z],
+      Company: ["DIWALI", "YOGA DAY", "BAISAKHI", "EASTER", "EASTER","ENVIRONMENT DAY","GOOD FRIDAY","GOOD FRIDAY","YOGA DAY","YOGA DAY","EASTER","BAISAKHI","HALLOWEEN","GOOD FRIDAY"]
+    }
 
   ]
   return (
