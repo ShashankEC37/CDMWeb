@@ -18,9 +18,9 @@
   }
   
   .text-md-end {
-    text-align: center; /* Adjust this based on your specific requirements */
+    text-align: left; /* Adjust this based on your specific requirements */
   }
   .text-left {
-    text-align: center;
+    text-align: left;
   }
-  
+    

@@ -130,14 +130,14 @@ export const Projects = () => {
       Company: ["ACCUSPIRALS", "LIGHT AND DECOR", "PROPERTYSALE", "RUP RUBBER ENTERPRISE", "SCHOOL OF MASTERS", "URBANDESK"]
     },
     {
-      title: "Leaterhead",
+      title: "Letterhead",
       description: "Click to know more",
       imgUrl: Leaterhead,
       Popupdisplay: [CarclassicLetterHead,CDMLetterHead,ComtecLetterHead,Light_decorLetterHead,RUPLetterHead,SOMLetterHead],
       Company: ["CARCLASSIC", "CREATIVE DIGITAL MEDIA", "COMTEC", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SCHOOL OF MASTERS"]
     },
     {
-      title: "Combines",
+      title: "Collaterals ",
       description: "Click to know more",
       imgUrl: combines,
       Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
@@ -159,14 +159,14 @@ export const Projects = () => {
       description : "Click to know more",
       imgUrl: CDM,
       Popupdisplay: [CDMSOcial1,CDMSOcial2,CDMSOcial3,CDMSOcial4,CDMSOcial5,CDMSOcial6,CDMSOcial7,CDMSOcial8,CDMSOcial9,CDMSOcial10,CDMSOcial11],
-      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+      Company: ["Social Media", "Data Deiven Marketing", "Search Engine Optimization", "Creative Digital Media ", "Content is King","Creative Digital Media", "Marketing Automation","Email Marketing"," Creative Digital Media", "Creative Digital Media","Creative Digital Media" ]
     },
     {
       title: "Client",
       description : "Click to know more",
       imgUrl: VOM,
       Popupdisplay: [Poster1,Poster2,Poster3,Poster4,Poster5],
-      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+      Company: ["VOICEOMAGIC", "","VOICEOMAGIC" ,"VOICEOMAGIC", "VOICEOMAGIC", "  VOICEOMAGIC"]
     },{
       title: "Festivals",
       description : "Click to know more",

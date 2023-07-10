@@ -168,7 +168,7 @@
   background-color: transparent;
   color: black;
   border: none;
-  font-size: 18px;
+  font-size: 25px;
   cursor: pointer;
   position: absolute;
   top: 10px;
@@ -188,4 +188,9 @@
 }
 .close-button:hover {
   color: red;
+}
+@media (max-width: 768px) {
+  .item img {
+    width: 100%;
+  }
 }

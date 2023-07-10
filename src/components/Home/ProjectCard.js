@@ -16,7 +16,7 @@ export const ProjectCard = ({ title, description, imgUrl, Popupdisplay, Company 
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 1,
       partialVisibilityGutter: 30,
     },
     tablet: {
@@ -32,7 +32,23 @@ export const ProjectCard = ({ title, description, imgUrl, Popupdisplay, Company 
   };
   const carouselStyle = {
     background: '#ffffff',
+    padding: '20px', // Default padding for non-mobile devices
   };
+  
+  // Check if the screen width is less than or equal to 768 pixels (mobile device)
+  if (window.innerWidth <= 768) {
+    carouselStyle.padding = '0'; // Remove padding for mobile devices
+  }
+  const [isHovered, setIsHovered] = useState(false);
+ 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   const handleImageClick = () => {
     setPopupVisible(true);
   };
@@ -40,26 +56,13 @@ export const ProjectCard = ({ title, description, imgUrl, Popupdisplay, Company 
   const handleCloseClick = () => {
     setPopupVisible(false);
   };
-
-  const popupStyle = {
-    backgroundColor: 'white',
-    borderRadius: "40px",
-    overflow: 'auto',
-    maxHeight: '100vh',
-    width: "2000px",
-    height: "600px",
-  };
-  
-
-  
-
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={100} sm={6} md={4}>
       <div className="proj-imgbx" onClick={handleImageClick}>
-      <img src={imgUrl} alt={title} onClick={handleImageClick} width="400" height="300" />
+      <img src={imgUrl} alt={title} onClick={handleImageClick}  />
         <div  className="proj-txtx" onClick={handleImageClick}>
           <h4>{title}</h4>
-          <span  onClick={handleImageClick}>{description}</span>
+          <span>{description}</span>
           
         </div>
       </div>
@@ -68,25 +71,35 @@ export const ProjectCard = ({ title, description, imgUrl, Popupdisplay, Company 
 
       {popupVisible && (
       <div className="overlay">
-        <div className="popup1" style={popupStyle}>
-          <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={1500} pauseOnHover={true} className="owl-carousel owl-theme skill-slider" style={carouselStyle}>
-            {Popupdisplay.map((image, index) => (
-              <div key={index} className="item">
-               <img
-  src={image}
-  style={{
-    width: '70%',
-    height: 'auto',
-    transition: 'max-width 0.3s ease',
-  }}
-  alt={`Popup Image ${index}`}
-  className="hoverable-image"
-/>
-
-                <h4 style={{ color: 'black' }}>{Company[index]}</h4>
-              </div>
-            ))}
-          </Carousel>
+        <div className="popup1">
+        <Carousel
+      responsive={responsive}
+      infinite={true}
+      autoPlay={!isHovered} // Continue autoplay when not hovered
+      autoPlaySpeed={1500}
+      pauseOnHover={true}
+      className="owl-carousel owl-theme skill-slider"
+      style={carouselStyle}
+    >
+      {Popupdisplay.map((image, index) => (
+       <div key={index} className="item">
+       <img
+         src={image}
+         alt={`Popup Image ${index}`}
+         className="hoverable-image"
+         onMouseEnter={handleMouseEnter}
+         onMouseLeave={handleMouseLeave}
+         style={{
+           width: '70%',
+           maxWidth: '100%',
+           maxHeight: "80vh"
+         }}
+       />
+       <h4 style={{ color: 'black' }}>{Company[index]}</h4>
+     </div>
+     
+      ))}
+    </Carousel>
           <button className="close-button" onClick={handleCloseClick}>
             <Close />
           </button>

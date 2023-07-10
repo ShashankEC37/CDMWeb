@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import Services from './components/Services/ServiceDetails';
 import About from './components/About'
 import { Footer } from './components/Footer'; 
-import Projects from './components/Projects/Projects';
+import {Projects} from "./components/Home/Projects"
 const App = () => {
   return (
     <Router>
