@@ -140,8 +140,8 @@ export const Projects = () => {
       title: "Collaterals ",
       description: "Click to know more",
       imgUrl: combines,
-      Popupdisplay: [ComtechCombines,Lights_decorCombines,RUPCombines,SOMCombines],
-      Company: ["COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE", "SPEAKING BRICKS", "SCHOOL OF MASTERS"]
+      Popupdisplay: [SOMCombines, ComtechCombines,Lights_decorCombines,RUPCombines],
+      Company: ["SCHOOL OF MASTERS", "COMTECH", "LIGHT AND DECOR", "RUP RUBBER ENTERPRISE"]
     },
   ];
 

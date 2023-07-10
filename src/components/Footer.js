@@ -45,7 +45,7 @@ export const Footer = () => {
   <img
     src={Whatsapp}
     alt="Whatsapp"
-    style={{ width: '40px', height: '40px', animation: 'none' }}
+    style={{ width: '40px', height: '40px', animation: 'zoom', cursor: 'pointer' }}
     onClick={handleClick}
   />
   <h5>+91 7259561303</h5>

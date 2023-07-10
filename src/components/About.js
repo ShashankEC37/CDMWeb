@@ -37,7 +37,7 @@ const About = () => {
     <div> <h1 className="vision" style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}><strong>About</strong></h1>
  </div>
  <div className="About" style={{ textAlign: 'justify' }}>
-  <h4 style={{ textAlign: 'justify', fontSize: '25px' }} data-aos="fade-right">
+  <h4 style={{ textAlign: 'justify', fontSize: '25px' }} >
     Established in August 2022, Creative Digital Media is a leading full-service digital marketing company. We provide comprehensive back-end tech support to empower organizations in their digital marketing endeavors.
   </h4>
   <h4 style={{ textAlign: 'justify', fontSize: '25px' }} data-aos="fade-right" data-aos-delay="500">

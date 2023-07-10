@@ -5,6 +5,7 @@ import { Banner } from "../Home/Banner";
 import {MyCarousel} from "../Home/Servces";
 import { Projects } from "../Home/Projects";
 import { Contact } from "../Home/Contact";
+
 import Newsletter from './Newsletter';
 function Home() {
   return (
