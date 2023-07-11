@@ -5,8 +5,8 @@
   }
 
   @media (max-width: 576px) {
-    .nav-link-mobile {
-      font-size: 14px;
+    .nav-link {
+      font-size: 10px;
     }
   }
   

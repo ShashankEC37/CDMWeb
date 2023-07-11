@@ -24,23 +24,25 @@ export const Footer = () => {
   return (
   
    <footer>
-  <Container fluid>
-  <Row className="align-items-end text-left">
+  <Container >
+  <Row className="align-items-start ">
   <Col xs={12} sm={6} md={3} lg={3} className="mb-4 mb-md-0">
-    <img src={logo} alt="Logo" style={{width: '130px' ,paddingBottom:"100px" }} />
+    <img src={logo} alt="Logo" style={{width: '200px' ,paddingBottom:"100px" }} />
+
   </Col>
 
-  <Col xs={12} sm={6} md={3} lg={3} className="mb-4 mb-md-0">
-    <br />
+  <Col xs={12} sm={6} md={3} lg={3} className="mb-4 mb-md-0 ">
     <h5>Quick Links</h5>
-    <h6><a href="/" style={{ color: "white" }}>Home</a></h6>
-    <h6><a href="/services" style={{ color: "white" }}>Services</a></h6>
-    <h6><a href="/portfolio" style={{ color: "white" }}>Portfolio</a></h6>
-    <h6><a href="/about" style={{ color: "white" }}>About</a></h6>
+    <div className="text-left">
+  <h6><a href="/" style={{ color: "white" }}>Home</a></h6>
+  <h6><a href="/services" style={{ color: "white" }}>Services</a></h6>
+  <h6><a href="/portfolio" style={{ color: "white" }}>Portfolio</a></h6>
+  <h6><a href="/about" style={{ color: "white" }}>About</a></h6>
+</div>
   </Col>
 
-  <Col xs={12} sm={6} md={3} lg={3} className="mb-4 mb-md-0 text-center">
-  
+  <Col xs={12} sm={6} md={3} lg={3} className="mb-4 mb-md-0 ">
+  <div className="text-left">
   <h5>Contact us</h5>
   <img
     src={Whatsapp}
@@ -48,15 +50,20 @@ export const Footer = () => {
     style={{ width: '40px', height: '40px', animation: 'zoom', cursor: 'pointer' }}
     onClick={handleClick}
   />
+</div>
+
+
+ 
   <h5>+91 7259561303</h5>
-  <h5>
-    <a
-      onClick={handleEmailClick}
-      style={{ textDecoration: 'underline', cursor: 'pointer' }}
-    >
-      param@creativedigitalmedia.co.in
-    </a>
-  </h5>
+  <h6>
+  <a
+  onClick={handleEmailClick}
+  style={{ textDecoration: 'underline', cursor: 'pointer', fontSize: '14px' }}
+>
+  param@creativedigitalmedia.co.in
+</a>
+
+  </h6>
 </Col>
 
   <Col xs={12} sm={6} md={3} lg={3} className="mb-4 mb-md-0">

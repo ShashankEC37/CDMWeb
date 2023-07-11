@@ -105,11 +105,11 @@ export const Projects = () => {
       title: "Logo",
       description: "Click to know more",
       imgUrl: Logo,
-      Popupdisplay: [cdm, crystal, SOM, Speaking, comtech],
-      Company: ["CREATIVE DIGITAL MEDIA", "CRYSTAL AHTINE", "SCHOOL OF MASTERS", "SPEAKING BRICKS", "COMTECH"]
+      Popupdisplay: [cdm, SOM, Speaking, comtech],
+      Company: ["CREATIVE DIGITAL MEDIA", "SCHOOL OF MASTERS", "SPEAKING BRICKS", "COMTECH"]
     },
     {
-      title: "Business Cards",
+      title: "Business Cards",  
       description: "Click to know more",
       imgUrl: BusinessCard,
       Popupdisplay: [ShaliniMukund,Lightanddecor,SOMBusnessCard, StudioLineBusinessCard,ComtechBusinessCard, fifteabusinesscard],
@@ -188,13 +188,13 @@ export const Projects = () => {
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
-                        <Nav.Link eventKey="first" className="nav-link-mobile">Branding</Nav.Link>
+                        <Nav.Link eventKey="first"><h6 className="nav-link">Branding</h6></Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second" className="nav-link-mobile">Web Development</Nav.Link>
+                        <Nav.Link eventKey="second"><h6 className="nav-link">Web Development</h6></Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third" className="nav-link-mobile">Social Media</Nav.Link>
+                        <Nav.Link eventKey="third"><h6 className="nav-link">Social Media</h6></Nav.Link>
                       </Nav.Item>
                     </Nav>
 

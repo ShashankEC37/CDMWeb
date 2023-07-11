@@ -16,7 +16,11 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/services" element= {<Services />} />
             <Route path="/about" element= {<About />} />
-            <Route path="/portfolio" element = {<Projects />}/>
+            <Route path="/portfolio" element={
+  <div style={{ padding: '40px' }}>
+    <Projects />
+  </div>
+} />
           </Routes>
         <Footer />
       </div>

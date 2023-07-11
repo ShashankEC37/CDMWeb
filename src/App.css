@@ -430,6 +430,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
+@media (max-width: 576px) {
+  .project .nav.nav-pills .nav-link  {
+    font-size: 10px;
+  }
+}
+
 .project .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
@@ -587,7 +593,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 0 0;
-  background-position: center center;
+  background-position: left left;
   background-size: cover;
   background-repeat: no-repeat;
 }

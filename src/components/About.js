@@ -9,7 +9,7 @@ import partnership from "../assets/img/partnership.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init({
-  offset: 200,
+  offset: 100,
   duration: 800
   });
 

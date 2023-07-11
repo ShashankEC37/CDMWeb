@@ -23,4 +23,24 @@
   .text-left {
     text-align: left;
   }
-    
+  .contact-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-container h5 {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  .text-left {
+    text-align: center;
+  }
+  
+  .text-left h6 {
+    margin: 0; /* Optional - Remove default margin if needed */
+  }
+  
+  .text-left h6 a {
+    color: white;
+    text-decoration: none;
+  }
+  
