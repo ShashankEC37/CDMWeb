@@ -26,7 +26,7 @@ export const Banner = () => {
     const phoneNumber = '+91 7259561303'; // Replace with your phone number
     const message = 'Hey can i know more about your services.'; // Replace with your default message
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/7259561303?text=${encodedMessage}`, '_blank');
   };
 
   const tick = () => {
